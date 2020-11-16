@@ -1,0 +1,48 @@
+{
+  "name": "TheWolfMan263",
+  "dots": [
+    {
+      "x": 318.671875,
+      "y": 183,
+      "type": "1"
+    },
+    {
+      "x": 227.671875,
+      "y": 350,
+      "type": "1"
+    },
+    {
+      "x": 138.671875,
+      "y": 375,
+      "type": "1"
+    },
+    {
+      "x": 268.671875,
+      "y": 354,
+      "type": "1"
+    },
+    {
+      "x": 356.671875,
+      "y": 360,
+      "type": "1"
+    },
+    {
+      "x": 321.671875,
+      "y": 383,
+      "type": "1"
+    },
+    {
+      "x": 220.671875,
+      "y": 283,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-22T13:50:01.351984",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

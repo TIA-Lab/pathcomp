@@ -1,0 +1,28 @@
+{
+  "name": "hannahpedley",
+  "dots": [
+    {
+      "x": 245.671875,
+      "y": 142,
+      "type": "1"
+    },
+    {
+      "x": 202.671875,
+      "y": 130,
+      "type": "1"
+    },
+    {
+      "x": 238.671875,
+      "y": 332,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-27T15:51:26.406592",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

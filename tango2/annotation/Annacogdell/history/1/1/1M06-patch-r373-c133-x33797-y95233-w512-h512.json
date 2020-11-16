@@ -1,0 +1,28 @@
+{
+  "name": "Annacogdell",
+  "dots": [
+    {
+      "x": 241.171875,
+      "y": 335,
+      "type": "1"
+    },
+    {
+      "x": 245.171875,
+      "y": 147,
+      "type": "1"
+    },
+    {
+      "x": 208.171875,
+      "y": 131,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-03T09:32:05.549692",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

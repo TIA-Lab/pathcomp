@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% load tango_filters %}
+{% load static %}
+
+{% block content %}
+<div class="content">
+    <div class="container p-2">
+
+        <div class="row">
+            <div class="col-12">
+
+                <div class="card card-primary card-outline">
+                    <div class="card-header">
+                        <h5 class="card-title">Practice</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="callout callout-info">
+                                <h5><i class="fas fa-info"></i> Practice Information:</h5>
+                                <ul>
+                                    <li>Have a go at identifying tumour cells.</li>
+                                    <li>Mark them in the square by clicking your mouse. Use the computer keys to help navigate.</li>
+                                    <li>On the <strong class="{% getLevelClassColor '1' %}">{% getLevelString '1' %} </strong> level you will be identifying positive tumour cells (<span class="tango-circle" style="font-size:10px; background:red; color:white;">&nbsp;</span>) and on the <strong class="{% getLevelClassColor '2' %}">{% getLevelString '2' %} </strong> level you will identify positive (<span class="tango-circle" style="font-size:10px; background:red; color:white;">&nbsp;</span>) and negative tumour cells (<span class="tango-circle" style="font-size:10px; background:green; color:white;">&nbsp;</span>).</li>
+                                    <li>Have as many practices as you need. Once you feel comfortable make your way over to the competition.</li>
+                                </ul>
+                            </div> 
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="{% url 'tangooff-practice' '1' %}">
+                                    <div class="small-box bg-success">
+                                        <div class="inner">
+                                            <h3>Practice</h3>
+                                            <h4>Mild Level </h4>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fas fa-walking"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="{% url 'tangooff-practice' '2' %}">
+                                    <div class="small-box bg-info">
+                                        <div class="inner">
+                                            <h3>Practice</h3>
+                                            <h4>Hot Level </h4>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fas fa-running"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- /.card -->
+            </div>
+
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+{% endblock content %}

@@ -1,0 +1,48 @@
+{
+  "name": "rebekah4202",
+  "dots": [
+    {
+      "x": 140.671875,
+      "y": 369,
+      "type": "1"
+    },
+    {
+      "x": 230.671875,
+      "y": 343,
+      "type": "1"
+    },
+    {
+      "x": 268.671875,
+      "y": 350,
+      "type": "1"
+    },
+    {
+      "x": 322.671875,
+      "y": 383,
+      "type": "1"
+    },
+    {
+      "x": 357.671875,
+      "y": 353,
+      "type": "1"
+    },
+    {
+      "x": 321.671875,
+      "y": 185,
+      "type": "1"
+    },
+    {
+      "x": 149.671875,
+      "y": 251,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-22T15:15:47.262287",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

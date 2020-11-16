@@ -1,0 +1,53 @@
+{
+  "name": "QuincyJnr",
+  "dots": [
+    {
+      "x": 244.671875,
+      "y": 248,
+      "type": "1"
+    },
+    {
+      "x": 208.671875,
+      "y": 262,
+      "type": "1"
+    },
+    {
+      "x": 192.671875,
+      "y": 303,
+      "type": "1"
+    },
+    {
+      "x": 282.671875,
+      "y": 255,
+      "type": "1"
+    },
+    {
+      "x": 318.671875,
+      "y": 266,
+      "type": "1"
+    },
+    {
+      "x": 337.671875,
+      "y": 316,
+      "type": "1"
+    },
+    {
+      "x": 147.671875,
+      "y": 150,
+      "type": "1"
+    },
+    {
+      "x": 190.671875,
+      "y": 142,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-08T17:14:07.588872",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

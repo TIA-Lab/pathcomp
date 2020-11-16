@@ -1,0 +1,38 @@
+{
+  "name": "eel64",
+  "dots": [
+    {
+      "x": 162.84375,
+      "y": 149.5,
+      "type": "1"
+    },
+    {
+      "x": 281.84375,
+      "y": 198.5,
+      "type": "1"
+    },
+    {
+      "x": 351.84375,
+      "y": 312.5,
+      "type": "1"
+    },
+    {
+      "x": 370.84375,
+      "y": 345.5,
+      "type": "1"
+    },
+    {
+      "x": 274.84375,
+      "y": 259.5,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-20T18:28:08.886662",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13310.93.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.133 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

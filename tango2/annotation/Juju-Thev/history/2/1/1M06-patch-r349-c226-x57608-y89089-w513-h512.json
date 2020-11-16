@@ -1,0 +1,23 @@
+{
+  "name": "Juju-Thev",
+  "dots": [
+    {
+      "x": 146.67498779296875,
+      "y": 234,
+      "type": "1"
+    },
+    {
+      "x": 329.67498779296875,
+      "y": 198.19999885559082,
+      "type": "2"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-05T18:58:39.426767",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13421.73.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.112 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

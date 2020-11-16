@@ -1,0 +1,28 @@
+{
+  "name": "4Emily4",
+  "dots": [
+    {
+      "x": 140.171875,
+      "y": 243,
+      "type": "1"
+    },
+    {
+      "x": 378.171875,
+      "y": 207,
+      "type": "1"
+    },
+    {
+      "x": 343.171875,
+      "y": 229,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-04T12:46:17.611460",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

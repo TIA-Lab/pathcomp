@@ -1,0 +1,33 @@
+{
+  "name": "Crystal",
+  "dots": [
+    {
+      "x": 330.671875,
+      "y": 210,
+      "type": "1"
+    },
+    {
+      "x": 335.671875,
+      "y": 191,
+      "type": "1"
+    },
+    {
+      "x": 374.671875,
+      "y": 183,
+      "type": "1"
+    },
+    {
+      "x": 387.671875,
+      "y": 253,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-27T19:40:54.207926",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

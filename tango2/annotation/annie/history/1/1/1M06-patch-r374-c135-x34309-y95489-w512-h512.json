@@ -1,0 +1,43 @@
+{
+  "name": "annie",
+  "dots": [
+    {
+      "x": 352.5,
+      "y": 135,
+      "type": "1"
+    },
+    {
+      "x": 354.5,
+      "y": 169,
+      "type": "1"
+    },
+    {
+      "x": 301.5,
+      "y": 275,
+      "type": "1"
+    },
+    {
+      "x": 254.5,
+      "y": 289,
+      "type": "1"
+    },
+    {
+      "x": 154.5,
+      "y": 374,
+      "type": "1"
+    },
+    {
+      "x": 215.5,
+      "y": 386,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-22T18:55:09.115747",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Mobile/15E148 Safari/604.1",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

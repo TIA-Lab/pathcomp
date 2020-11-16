@@ -1,0 +1,48 @@
+{
+  "name": "rahmanh",
+  "dots": [
+    {
+      "x": 199.671875,
+      "y": 332,
+      "type": "1"
+    },
+    {
+      "x": 263.671875,
+      "y": 218,
+      "type": "1"
+    },
+    {
+      "x": 310.671875,
+      "y": 201,
+      "type": "1"
+    },
+    {
+      "x": 263.671875,
+      "y": 142,
+      "type": "1"
+    },
+    {
+      "x": 176.671875,
+      "y": 153,
+      "type": "1"
+    },
+    {
+      "x": 221.671875,
+      "y": 162,
+      "type": "1"
+    },
+    {
+      "x": 221.671875,
+      "y": 162,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-07T13:11:10.382891",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36 Edg/86.0.622.58",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

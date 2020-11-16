@@ -1,0 +1,38 @@
+{
+  "name": "Sebes",
+  "dots": [
+    {
+      "x": 133.66666412353516,
+      "y": 241,
+      "type": "1"
+    },
+    {
+      "x": 336.66666412353516,
+      "y": 226,
+      "type": "1"
+    },
+    {
+      "x": 372.66666412353516,
+      "y": 206,
+      "type": "1"
+    },
+    {
+      "x": 325.66666412353516,
+      "y": 379,
+      "type": "1"
+    },
+    {
+      "x": 170.66666412353516,
+      "y": 290,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-05T09:47:37.731809",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

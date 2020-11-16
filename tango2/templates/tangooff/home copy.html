@@ -1,0 +1,317 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="content">
+    <div class="container p-2">
+
+        <div class="row">
+            <div class="col-12">
+
+                <div class="card card-primary card-outline">
+                    <div class="card-header">
+                        <h5 class="card-title">Dotting Practice</h5>
+                    </div>
+                    <div class="card-body">
+
+                        <form action="/save" method="POST" id="form"  onsubmit="return validate_form()">
+                            <input type="hidden" name="patch" value="{{image_path}}" />
+                            <input type="hidden" name="dots" value="" id="dotsInput" />
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Patch Info</h5>
+                                            <table class="table table-sm">
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">File Path</th>
+                                                    <td>{{image_path}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Size</th>
+                                                    <td>{{patch_width}}x{{patch_height}}px</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title">Keyboard Shortcuts</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <dl>
+                                                <dt>Cell Selection</dt>
+                                                <dd><img class="tango-key-icon" src="{% static 'image/q-100.png' %}"> : positive tumor cells</dd>
+                                                <dd><img class="tango-key-icon" src="{% static 'image/z-100.png' %}"> : negative tumor cells</dd>
+                                                <dd><img class="tango-key-icon" src="{% static 'image/p-100.png' %}"> : positive non-tumor cells</dd>
+                                                <dd><img class="tango-key-icon" src="{% static 'image/m-100.png' %}"> : click negative non-tumor cells</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Cell Deletion</dt>
+                                                <dd><img class="tango-key-icon" src="{% static 'image/backspace-100.png' %}"> : remove the most recent dot</dd>
+                                                <dd><img class="tango-key-icon" src="{% static 'image/x-100.png' %}"> : delete a dot after hovering over</dd>
+                                            </dl>  
+                                            <dl>
+                                                <dt>Submission</dt>
+                                                <dd><img class="tango-key-icon" src="{% static 'image/enter-100.png' %}"> : submit the annotation</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title">Selection</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-group row">
+                                                <label class="col-3 col-form-label">Style:</label>
+                                                <div class="col-9">
+                                                    <select class="form-control" id="myList">
+                                                        <option value = "1">Positive tumor cell</option>
+                                                        <option value = "2">Negative tumor cell</option>
+                                                        <option value = "3">Positive non-tumor cell</option>
+                                                        <option value = "4">Negative non-tumor cell</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="button" class="btn btn-sm btn-block btn-warning" value="Undo" id="btnUndo"/>
+                                                <input type="button" class="btn btn-sm btn-block btn-danger"  value="Clear All" id="btnClear"/>
+                                                <input type="submit" class="btn btn-sm btn-block btn-primary" value="Submit Dots"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div><!-- /.card -->
+            </div>
+
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    let mousePos;
+    let dots = [];
+    const margin = 16;
+    const marginWidth = 3;
+    const form = document.getElementById('form');
+    const dotsInput = document.getElementById('dotsInput');
+    const btnClear = document.getElementById('btnClear');
+    const btnUndo = document.getElementById('btnUndo');
+    const img = new Image();
+
+    img.src = '';
+    img.onload = function () {
+        ctx.drawImage(img, 0, 0);
+    };
+    img.addEventListener('load', draw);
+
+    function undo() {
+        dots.pop();
+        updateForm();
+        draw();
+    }
+
+    document.onkeydown= function (e) {
+        var select = document.getElementById("myList");
+        if(document.getElementById("name")!=document.activeElement){
+            switch (e.key) {
+                case 'q':
+                    select.options[0].selected = true;
+                    break;
+                case 'z':
+                    select.options[1].selected = true;
+                    break;
+                case 'p':
+                    select.options[2].selected = true;
+                    break;
+                case 'm':
+                    select.options[3].selected = true;
+                    break;
+            }
+        }
+
+    }
+    function clear() {
+        dots = [];
+        updateForm();
+        draw();
+    }
+    
+    function GetSelectedValue(){
+        var e = document.getElementById("myList");
+
+        var result = e.options[e.selectedIndex].value;
+        return result;
+        // document.getElementById("result").innerHTML = result;
+    }
+
+    function GetSelectedText(){
+        var e = document.getElementById("myList");
+        var result = e.options[e.selectedIndex].text;
+        return result;
+//  document.getElementById("result").innerHTML = result;
+    }
+
+    function getCursorPosition(canvas, event) {
+        const rect = canvas.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        return { x: x, y: y };
+    }
+
+    function setMouse(event) {
+        mousePos = getCursorPosition(canvas, event);
+        draw();
+    }
+
+
+    function drawDot(pos, color = 'green') {
+        switch (Number(pos['type']) ) {
+            case 1:
+                color = 'red';
+                break;
+            case 2:
+                color = 'green';
+                break;
+            case 3:
+                color = 'yellow';
+                break;
+            case 4:
+                color = 'blue';
+                break;
+        }
+        ctx.beginPath();
+        ctx.arc(pos.x, pos.y, 5, 0, 2 * Math.PI);
+        ctx.strokeStyle = color;
+        ctx.fillStyle = color;
+        ctx.stroke();
+        ctx.fill();
+    }
+    function updateForm() {
+        dotsInput.value = JSON.stringify(dots);
+    }
+    
+    function drawMargin() {
+    const rect = canvas.getBoundingClientRect();
+    ctx.setLineDash([]);
+    ctx.strokeStyle = 'pink';
+    ctx.lineWidth = marginWidth;
+    ctx.globalCompositeOperation = 'difference';
+    ctx.strokeRect(
+        margin,
+        margin,
+        rect.width - 2 * margin,
+        rect.height - 2 * margin,
+    );
+    // Reset
+    ctx.setLineDash([]);
+    ctx.globalCompositeOperation = 'source-over';
+    }
+
+    function draw() {
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0);
+        for (let i = 0; i < dots.length; i++) {
+            const d = dots[i];
+            drawDot(d);
+        }
+
+        const valid = dots.filter(function (d) {
+            return Math.pow(d.x - mousePos.x, 2) + Math.pow(d.y - mousePos.y, 2) < 50;
+        });
+
+        if (valid.length) {
+        const sorted = valid.sort(function (a, b) {
+            let da = Math.pow(a.x - mousePos.x, 2) + Math.pow(a.y - mousePos.y, 2);
+            let db = Math.pow(b.x - mousePos.x, 2) + Math.pow(b.y - mousePos.y, 2);
+            return da - db;
+        });
+
+        drawDot(sorted[0], 'yellow');
+        }
+
+        drawMargin();
+    }
+
+    function keyHandler(e) {
+        if(document.getElementById("name")!=document.activeElement){
+            console.log(e.code);
+
+            if (e.code == 'Backspace') {
+                e.preventDefault();
+                undo();
+            }
+
+            if (e.code == 'KeyX') {
+                const pos = getCursorPosition(canvas, e);
+                const valid = dots.filter(function (d) {
+                    return Math.pow(d.x - mousePos.x, 2) + Math.pow(d.y - mousePos.y, 2) < 50;
+                });
+
+                if (!valid.length)
+                    return;
+
+                const sorted = valid.sort(function (a, b) {
+                    let da = Math.pow(a.x - mousePos.x, 2) + Math.pow(a.y - mousePos.y, 2);
+                    let db = Math.pow(b.x - mousePos.x, 2) + Math.pow(b.y - mousePos.y, 2);
+                    return da - db;
+                });
+
+                dots.splice(dots.indexOf(sorted[0]), 1);
+                updateForm();
+                draw();
+            }
+
+        }
+
+        if (e.code == 'Enter') {
+            e.preventDefault();
+            var name = document.getElementById("name").value.trim();
+            if (name != "") {
+                document.cookie="name="+name;
+                form.submit()
+            }else{
+                alert("please input your name.")
+            }
+        }
+
+    }
+
+
+    canvas.addEventListener('click', function (e) {
+        const pos = getCursorPosition(canvas, e);
+        pos['type'] = GetSelectedValue();
+        dots.push(pos);
+        updateForm();
+        drawDot(pos);
+        setMouse(e);
+    });
+
+    document.addEventListener('mousemove', setMouse, false);
+    document.addEventListener('mouseenter', setMouse, false);
+    document.addEventListener('keydown', keyHandler);
+
+    btnUndo.addEventListener('click', undo);
+    btnClear.addEventListener('click', function(e) {
+        const really = confirm(
+            "Are you sure you want to clear all the points?"
+        );
+        if (really) {
+            clear();
+        }
+    })
+
+</script>
+{% endblock content %}

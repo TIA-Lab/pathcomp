@@ -1,0 +1,38 @@
+{
+  "name": "anjola_axox",
+  "dots": [
+    {
+      "x": 181.171875,
+      "y": 229,
+      "type": "1"
+    },
+    {
+      "x": 150.171875,
+      "y": 258,
+      "type": "1"
+    },
+    {
+      "x": 216.171875,
+      "y": 143,
+      "type": "1"
+    },
+    {
+      "x": 283.171875,
+      "y": 186,
+      "type": "1"
+    },
+    {
+      "x": 155.171875,
+      "y": 135,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-20T18:33:14.941934",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13310.93.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.133 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

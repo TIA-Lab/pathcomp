@@ -1,0 +1,28 @@
+{
+  "name": "sahaj2551@gmail.com",
+  "dots": [
+    {
+      "x": 273.171875,
+      "y": 182,
+      "type": "1"
+    },
+    {
+      "x": 350.171875,
+      "y": 134,
+      "type": "1"
+    },
+    {
+      "x": 371.171875,
+      "y": 334,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-22T15:32:31.737121",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36 Edg/86.0.622.48",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

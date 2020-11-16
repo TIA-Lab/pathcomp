@@ -1,0 +1,38 @@
+{
+  "name": "laurels14",
+  "dots": [
+    {
+      "x": 318.671875,
+      "y": 185,
+      "type": "1"
+    },
+    {
+      "x": 221.671875,
+      "y": 347,
+      "type": "1"
+    },
+    {
+      "x": 139.671875,
+      "y": 371,
+      "type": "1"
+    },
+    {
+      "x": 326.671875,
+      "y": 384,
+      "type": "1"
+    },
+    {
+      "x": 358.671875,
+      "y": 358,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-28T19:28:46.349096",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

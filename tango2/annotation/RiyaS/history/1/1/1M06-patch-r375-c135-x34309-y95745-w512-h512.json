@@ -1,0 +1,33 @@
+{
+  "name": "RiyaS",
+  "dots": [
+    {
+      "x": 293.171875,
+      "y": 187,
+      "type": "1"
+    },
+    {
+      "x": 168.171875,
+      "y": 226,
+      "type": "1"
+    },
+    {
+      "x": 155.171875,
+      "y": 254,
+      "type": "1"
+    },
+    {
+      "x": 215.171875,
+      "y": 152,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-22T16:41:51.334310",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Safari/605.1.15",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

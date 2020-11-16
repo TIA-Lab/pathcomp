@@ -1,0 +1,28 @@
+{
+  "name": "Mrollie",
+  "dots": [
+    {
+      "x": 384.67706298828125,
+      "y": 184.3333282470703,
+      "type": "1"
+    },
+    {
+      "x": 254.67706298828125,
+      "y": 280.3333282470703,
+      "type": "2"
+    },
+    {
+      "x": 214.67706298828125,
+      "y": 316.3333282470703,
+      "type": "2"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-09T14:24:31.698776",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

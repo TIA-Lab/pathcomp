@@ -1,0 +1,48 @@
+{
+  "name": "fluffy10",
+  "dots": [
+    {
+      "x": 277.671875,
+      "y": 281,
+      "type": "1"
+    },
+    {
+      "x": 164.671875,
+      "y": 133,
+      "type": "1"
+    },
+    {
+      "x": 134.671875,
+      "y": 126,
+      "type": "1"
+    },
+    {
+      "x": 219.671875,
+      "y": 190,
+      "type": "2"
+    },
+    {
+      "x": 258.671875,
+      "y": 209,
+      "type": "2"
+    },
+    {
+      "x": 350.671875,
+      "y": 327,
+      "type": "2"
+    },
+    {
+      "x": 137.671875,
+      "y": 212,
+      "type": "2"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-18T14:07:43.811051",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

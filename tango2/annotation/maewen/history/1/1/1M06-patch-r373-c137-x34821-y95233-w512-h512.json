@@ -1,0 +1,43 @@
+{
+  "name": "maewen",
+  "dots": [
+    {
+      "x": 164.171875,
+      "y": 143,
+      "type": "1"
+    },
+    {
+      "x": 214.171875,
+      "y": 130,
+      "type": "1"
+    },
+    {
+      "x": 268.171875,
+      "y": 194,
+      "type": "1"
+    },
+    {
+      "x": 281.171875,
+      "y": 260,
+      "type": "1"
+    },
+    {
+      "x": 342.171875,
+      "y": 312,
+      "type": "1"
+    },
+    {
+      "x": 361.171875,
+      "y": 351,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-21T12:55:32.643616",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13310.76.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.108 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

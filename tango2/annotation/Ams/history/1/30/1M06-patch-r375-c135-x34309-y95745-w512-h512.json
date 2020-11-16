@@ -1,0 +1,38 @@
+{
+  "name": "Ams",
+  "dots": [
+    {
+      "x": 157,
+      "y": 255,
+      "type": "1"
+    },
+    {
+      "x": 174,
+      "y": 227,
+      "type": "1"
+    },
+    {
+      "x": 218,
+      "y": 144,
+      "type": "1"
+    },
+    {
+      "x": 155,
+      "y": 129,
+      "type": "1"
+    },
+    {
+      "x": 281,
+      "y": 187,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-30T09:40:01.543646",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

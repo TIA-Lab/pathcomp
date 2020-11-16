@@ -1,0 +1,38 @@
+{
+  "name": "ShaziaA",
+  "dots": [
+    {
+      "x": 201.51040649414062,
+      "y": 127,
+      "type": "1"
+    },
+    {
+      "x": 246.51040649414062,
+      "y": 144,
+      "type": "1"
+    },
+    {
+      "x": 239.51040649414062,
+      "y": 337,
+      "type": "1"
+    },
+    {
+      "x": 242.51040649414062,
+      "y": 328,
+      "type": "1"
+    },
+    {
+      "x": 371.5104064941406,
+      "y": 333,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-22T14:32:29.526217",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

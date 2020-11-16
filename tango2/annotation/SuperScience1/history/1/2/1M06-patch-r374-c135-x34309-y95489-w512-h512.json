@@ -1,0 +1,33 @@
+{
+  "name": "SuperScience1",
+  "dots": [
+    {
+      "x": 347.0546875,
+      "y": 138.578125,
+      "type": "1"
+    },
+    {
+      "x": 352.0546875,
+      "y": 160.578125,
+      "type": "1"
+    },
+    {
+      "x": 301.0546875,
+      "y": 267.578125,
+      "type": "1"
+    },
+    {
+      "x": 211.0546875,
+      "y": 383.578125,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-26T23:11:21.656447",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

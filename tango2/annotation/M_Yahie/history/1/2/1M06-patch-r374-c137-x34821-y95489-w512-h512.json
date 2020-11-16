@@ -1,0 +1,28 @@
+{
+  "name": "M_Yahie",
+  "dots": [
+    {
+      "x": 289.171875,
+      "y": 236,
+      "type": "1"
+    },
+    {
+      "x": 275.171875,
+      "y": 359,
+      "type": "1"
+    },
+    {
+      "x": 365.171875,
+      "y": 190,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-28T16:21:13.392867",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13421.73.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.112 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

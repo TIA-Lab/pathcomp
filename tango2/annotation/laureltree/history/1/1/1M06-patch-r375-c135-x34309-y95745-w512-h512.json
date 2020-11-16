@@ -1,0 +1,33 @@
+{
+  "name": "laureltree",
+  "dots": [
+    {
+      "x": 151.171875,
+      "y": 257,
+      "type": "1"
+    },
+    {
+      "x": 170.171875,
+      "y": 229,
+      "type": "1"
+    },
+    {
+      "x": 210.171875,
+      "y": 142,
+      "type": "1"
+    },
+    {
+      "x": 291.171875,
+      "y": 181,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-27T16:57:41.385557",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13421.53.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.77 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "alicjader",
+  "dots": [
+    {
+      "x": 332.671875,
+      "y": 163,
+      "type": "1"
+    },
+    {
+      "x": 158.671875,
+      "y": 176,
+      "type": "1"
+    },
+    {
+      "x": 209.671875,
+      "y": 328,
+      "type": "1"
+    },
+    {
+      "x": 370.671875,
+      "y": 360,
+      "type": "1"
+    },
+    {
+      "x": 322.671875,
+      "y": 135,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-04T18:21:35.185828",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Charlie.Welshman",
+  "dots": [
+    {
+      "x": 364.671875,
+      "y": 205,
+      "type": "1"
+    },
+    {
+      "x": 337.671875,
+      "y": 216,
+      "type": "1"
+    },
+    {
+      "x": 324.671875,
+      "y": 377,
+      "type": "1"
+    },
+    {
+      "x": 133.671875,
+      "y": 245,
+      "type": "1"
+    },
+    {
+      "x": 232.671875,
+      "y": 297,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-28T20:56:06.400638",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

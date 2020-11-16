@@ -1,0 +1,43 @@
+version: '3.3'
+
+services:
+
+  web:
+    build: ./tango2
+    restart: always
+    ports:
+            #- "20.0.0.11:8080:5000"
+      - "20.0.0.6:8080:5000"
+    volumes:
+      - ./tango2:/app
+    # networks:
+    #   - frontend
+    environment:
+      MYSQL_ENGINE: "${DB_ENGINE}"
+      MYSQL_HOST: "${DB_HOST}"
+      MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
+      MYSQL_DATABASE: "${DB_NAME}"
+      MYSQL_USER: "${DB_USERNAME}"
+      MYSQL_PASSWORD: "${DB_PASSWORD}"
+      MYSQL_PORT: "${DB_PORT}"
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+            - ./mysql/data:/var/lib/mysql
+    # networks:
+    #   - backend
+    environment:
+      MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
+      MYSQL_DATABASE: "${DB_NAME}"
+      MYSQL_USER: "${DB_USERNAME}"
+      MYSQL_PASSWORD: "${DB_PASSWORD}"
+
+# networks:
+#   frontend:
+#   backend:

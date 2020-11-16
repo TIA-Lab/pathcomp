@@ -1,0 +1,43 @@
+{
+  "name": "Dina",
+  "dots": [
+    {
+      "x": 275.671875,
+      "y": 197,
+      "type": "1"
+    },
+    {
+      "x": 284.671875,
+      "y": 251,
+      "type": "1"
+    },
+    {
+      "x": 284.671875,
+      "y": 251,
+      "type": "1"
+    },
+    {
+      "x": 360.671875,
+      "y": 276,
+      "type": "1"
+    },
+    {
+      "x": 222.671875,
+      "y": 358,
+      "type": "1"
+    },
+    {
+      "x": 333.671875,
+      "y": 357,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-23T00:38:34.290247",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

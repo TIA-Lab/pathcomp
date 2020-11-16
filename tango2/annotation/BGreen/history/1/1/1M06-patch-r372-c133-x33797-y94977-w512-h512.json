@@ -1,0 +1,33 @@
+{
+  "name": "BGreen",
+  "dots": [
+    {
+      "x": 152.671875,
+      "y": 156,
+      "type": "1"
+    },
+    {
+      "x": 224.671875,
+      "y": 275,
+      "type": "1"
+    },
+    {
+      "x": 141.671875,
+      "y": 297,
+      "type": "1"
+    },
+    {
+      "x": 207.671875,
+      "y": 370,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-04T11:22:56.426654",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

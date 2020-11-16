@@ -1,0 +1,48 @@
+{
+  "name": "Charlie_Hall",
+  "dots": [
+    {
+      "x": 135.171875,
+      "y": 176,
+      "type": "1"
+    },
+    {
+      "x": 167.171875,
+      "y": 172,
+      "type": "1"
+    },
+    {
+      "x": 339.171875,
+      "y": 299,
+      "type": "1"
+    },
+    {
+      "x": 125.171875,
+      "y": 313,
+      "type": "1"
+    },
+    {
+      "x": 338.171875,
+      "y": 177,
+      "type": "1"
+    },
+    {
+      "x": 284.171875,
+      "y": 346,
+      "type": "1"
+    },
+    {
+      "x": 187.171875,
+      "y": 143,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-03T09:20:25.068183",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

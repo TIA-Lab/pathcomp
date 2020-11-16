@@ -1,0 +1,48 @@
+{
+  "name": "Trishnak",
+  "dots": [
+    {
+      "x": 327.671875,
+      "y": 349,
+      "type": "1"
+    },
+    {
+      "x": 140.671875,
+      "y": 336,
+      "type": "1"
+    },
+    {
+      "x": 234.671875,
+      "y": 266,
+      "type": "1"
+    },
+    {
+      "x": 182.671875,
+      "y": 128,
+      "type": "1"
+    },
+    {
+      "x": 359.671875,
+      "y": 226,
+      "type": "1"
+    },
+    {
+      "x": 299.671875,
+      "y": 303,
+      "type": "1"
+    },
+    {
+      "x": 379.671875,
+      "y": 374,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-30T15:43:17.463354",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

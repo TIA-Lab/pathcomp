@@ -1,0 +1,18 @@
+{
+  "name": "dmakaya",
+  "dots": [
+    {
+      "x": 252.171875,
+      "y": 331,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-21T17:23:35.814096",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13310.59.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.84 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

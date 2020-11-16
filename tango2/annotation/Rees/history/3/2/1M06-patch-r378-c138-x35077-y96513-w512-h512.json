@@ -1,0 +1,38 @@
+{
+  "name": "Rees",
+  "dots": [
+    {
+      "x": 316.671875,
+      "y": 132,
+      "type": "3"
+    },
+    {
+      "x": 321.671875,
+      "y": 152,
+      "type": "3"
+    },
+    {
+      "x": 326.671875,
+      "y": 194,
+      "type": "3"
+    },
+    {
+      "x": 304.671875,
+      "y": 240,
+      "type": "3"
+    },
+    {
+      "x": 304.671875,
+      "y": 374,
+      "type": "3"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-28T19:39:27.015434",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

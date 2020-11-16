@@ -1,0 +1,43 @@
+{
+  "name": "DevK",
+  "dots": [
+    {
+      "x": 144.171875,
+      "y": 176,
+      "type": "1"
+    },
+    {
+      "x": 180.171875,
+      "y": 178,
+      "type": "1"
+    },
+    {
+      "x": 191.171875,
+      "y": 149,
+      "type": "1"
+    },
+    {
+      "x": 134.171875,
+      "y": 322,
+      "type": "1"
+    },
+    {
+      "x": 213.171875,
+      "y": 238,
+      "type": "1"
+    },
+    {
+      "x": 344.171875,
+      "y": 299,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-01T11:32:11.792006",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (iPad; CPU OS 10_0_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/14A456 Safari/602.1",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

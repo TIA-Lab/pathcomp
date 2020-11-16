@@ -1,0 +1,43 @@
+{
+  "name": "HK835",
+  "dots": [
+    {
+      "x": 288.671875,
+      "y": 200,
+      "type": "1"
+    },
+    {
+      "x": 282.671875,
+      "y": 259,
+      "type": "1"
+    },
+    {
+      "x": 335.671875,
+      "y": 358,
+      "type": "1"
+    },
+    {
+      "x": 378.671875,
+      "y": 375,
+      "type": "1"
+    },
+    {
+      "x": 229.671875,
+      "y": 361,
+      "type": "1"
+    },
+    {
+      "x": 359.671875,
+      "y": 282,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-28T14:19:42.253135",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

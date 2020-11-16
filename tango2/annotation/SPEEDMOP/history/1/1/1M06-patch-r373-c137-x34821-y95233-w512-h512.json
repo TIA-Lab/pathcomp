@@ -1,0 +1,38 @@
+{
+  "name": "SPEEDMOP",
+  "dots": [
+    {
+      "x": 171.671875,
+      "y": 146,
+      "type": "1"
+    },
+    {
+      "x": 213.671875,
+      "y": 120,
+      "type": "1"
+    },
+    {
+      "x": 337.671875,
+      "y": 318,
+      "type": "1"
+    },
+    {
+      "x": 370.671875,
+      "y": 356,
+      "type": "1"
+    },
+    {
+      "x": 272.671875,
+      "y": 188,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-27T18:11:47.484238",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36 Edg/86.0.622.51",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

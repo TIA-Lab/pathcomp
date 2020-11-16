@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="content p-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h5 class="card-title">Certificate</h5>
+                    </div>
+                    <div class="card-body">
+                        
+                        <div>
+                            <h4 class="text-blue">Download Your Certificate</h4>
+                            <p class="font-weight-bold">The competition will end on 16 November 2020.<br/> Participants will then be able to download a general participation certificate following the instructions below: </p>
+                            <!-- <p>You just follow the below instructions to download a <span class="font-weight-bold">general participation certificate.</span></p> -->
+                            <ol>
+                                <li>Please log into the website. Once logged in, the 'Certificate' menu will appear on the top menu.</li>
+                                <li>Enter the child's name and click on the generation button to generate a certificate.</li>
+                                <li>The link for downloading will be displayed.</li>
+                                <li>Click the link to download.</li>
+                            </ol>
+                            <p>First, second and third place winners in each category will be notified once the competition closes.</p>
+                        </div> 
+                        <div class="mt-5">
+                            <h4 class="text-blue">Sample Certificate</h4>
+                            <img style="width:100%" src="/static/image/certificate.png" alt="">
+                        </div> 
+
+                    </div>
+                </div><!-- /.card -->
+            </div> <!-- /.col-md-12 -->
+        </div> <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+{% endblock content %}

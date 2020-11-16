@@ -1,0 +1,43 @@
+{
+  "name": "aisha.dawodu",
+  "dots": [
+    {
+      "x": 111.671875,
+      "y": 354,
+      "type": "1"
+    },
+    {
+      "x": 384.671875,
+      "y": 261,
+      "type": "1"
+    },
+    {
+      "x": 326.671875,
+      "y": 220,
+      "type": "1"
+    },
+    {
+      "x": 344.671875,
+      "y": 181,
+      "type": "1"
+    },
+    {
+      "x": 376.671875,
+      "y": 183,
+      "type": "1"
+    },
+    {
+      "x": 319.671875,
+      "y": 361,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-30T17:21:28.473937",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

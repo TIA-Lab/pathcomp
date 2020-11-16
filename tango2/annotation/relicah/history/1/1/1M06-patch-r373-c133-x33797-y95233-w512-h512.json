@@ -1,0 +1,23 @@
+{
+  "name": "relicah",
+  "dots": [
+    {
+      "x": 243.6770782470703,
+      "y": 333.9166660308838,
+      "type": "1"
+    },
+    {
+      "x": 248.6770782470703,
+      "y": 145.9166660308838,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-03T09:18:53.155947",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

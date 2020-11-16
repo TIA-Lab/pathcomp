@@ -1,0 +1,28 @@
+{
+  "name": "fluffy10",
+  "dots": [
+    {
+      "x": 271.671875,
+      "y": 302,
+      "type": "2"
+    },
+    {
+      "x": 233.671875,
+      "y": 160,
+      "type": "2"
+    },
+    {
+      "x": 212.671875,
+      "y": 217,
+      "type": "2"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-18T14:11:15.886911",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

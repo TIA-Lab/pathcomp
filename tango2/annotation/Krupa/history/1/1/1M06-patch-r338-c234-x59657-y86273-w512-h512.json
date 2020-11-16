@@ -1,0 +1,38 @@
+{
+  "name": "Krupa",
+  "dots": [
+    {
+      "x": 134.671875,
+      "y": 237,
+      "type": "1"
+    },
+    {
+      "x": 169.671875,
+      "y": 282,
+      "type": "1"
+    },
+    {
+      "x": 319.671875,
+      "y": 368,
+      "type": "1"
+    },
+    {
+      "x": 333.671875,
+      "y": 221,
+      "type": "1"
+    },
+    {
+      "x": 372.671875,
+      "y": 214,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-28T14:42:39.741166",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

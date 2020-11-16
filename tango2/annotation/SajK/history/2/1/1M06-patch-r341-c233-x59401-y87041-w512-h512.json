@@ -1,0 +1,28 @@
+{
+  "name": "SajK",
+  "dots": [
+    {
+      "x": 218.171875,
+      "y": 205,
+      "type": "1"
+    },
+    {
+      "x": 189.171875,
+      "y": 231,
+      "type": "1"
+    },
+    {
+      "x": 361.171875,
+      "y": 358,
+      "type": "2"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-11T18:31:15.540224",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

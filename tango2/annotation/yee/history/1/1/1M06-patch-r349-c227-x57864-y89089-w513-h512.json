@@ -1,0 +1,23 @@
+{
+  "name": "yee",
+  "dots": [
+    {
+      "x": 279.671875,
+      "y": 184,
+      "type": "1"
+    },
+    {
+      "x": 360.671875,
+      "y": 326,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-21T20:20:33.554391",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13310.93.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.133 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

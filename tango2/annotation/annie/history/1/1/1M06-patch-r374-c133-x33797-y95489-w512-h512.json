@@ -1,0 +1,63 @@
+{
+  "name": "annie",
+  "dots": [
+    {
+      "x": 287.5,
+      "y": 202,
+      "type": "1"
+    },
+    {
+      "x": 282.5,
+      "y": 254,
+      "type": "1"
+    },
+    {
+      "x": 356.5,
+      "y": 268,
+      "type": "1"
+    },
+    {
+      "x": 333.5,
+      "y": 354,
+      "type": "1"
+    },
+    {
+      "x": 306.5,
+      "y": 371,
+      "type": "1"
+    },
+    {
+      "x": 222.5,
+      "y": 356,
+      "type": "1"
+    },
+    {
+      "x": 195.5,
+      "y": 380,
+      "type": "1"
+    },
+    {
+      "x": 132.5,
+      "y": 231,
+      "type": "1"
+    },
+    {
+      "x": 146.5,
+      "y": 147,
+      "type": "1"
+    },
+    {
+      "x": 206.5,
+      "y": 146,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-22T18:55:43.648807",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Mobile/15E148 Safari/604.1",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

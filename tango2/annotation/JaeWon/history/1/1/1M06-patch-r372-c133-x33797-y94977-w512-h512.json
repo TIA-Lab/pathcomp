@@ -1,0 +1,33 @@
+{
+  "name": "JaeWon",
+  "dots": [
+    {
+      "x": 136.671875,
+      "y": 302,
+      "type": "1"
+    },
+    {
+      "x": 226.671875,
+      "y": 275,
+      "type": "1"
+    },
+    {
+      "x": 214.671875,
+      "y": 364,
+      "type": "1"
+    },
+    {
+      "x": 143.671875,
+      "y": 155,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-07T20:34:58.670694",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

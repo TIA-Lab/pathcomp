@@ -1,0 +1,72 @@
+
+.tango-overlay-normal {
+    border-radius: .25rem;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 50;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .active > a:first-child {
+    color: rgba(255, 255, 255, 1) !important;
+    background-color: rgba(0,0,255, .5) !important;
+}
+
+.tango-home-image { 
+    /* background: url(/static/image/home-image-dot.jpg) center/cover no-repeat; */
+    background-color: #007BFF;
+}
+
+.tango-justify {
+    border: 0px;
+    font-size: 16px;
+    /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
+    background-color: transparent;
+    white-space: pre-wrap;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 0px;
+    line-height: 30px;
+    color: #666;
+}
+
+.tango-key-icon {
+    width:35px;
+}
+
+.tango-overlay-normal {
+    border-radius: .25rem;
+    -ms-flex-align: center;
+    align-items: center;
+    /* background: rgba(255,255,255,.7); */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 50;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .active > a:first-child {
+    color: rgba(255, 255, 255, 1) !important;
+    background-color: rgba(0,0,255, .5) !important;
+}
+
+.tango-circle {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 20px;
+}

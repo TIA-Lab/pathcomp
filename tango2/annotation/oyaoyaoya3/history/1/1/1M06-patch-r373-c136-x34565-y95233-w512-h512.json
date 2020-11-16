@@ -1,0 +1,33 @@
+{
+  "name": "oyaoyaoya3",
+  "dots": [
+    {
+      "x": 234.671875,
+      "y": 212,
+      "type": "1"
+    },
+    {
+      "x": 246.671875,
+      "y": 300,
+      "type": "1"
+    },
+    {
+      "x": 230.671875,
+      "y": 374,
+      "type": "1"
+    },
+    {
+      "x": 130.671875,
+      "y": 221,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-23T16:09:13.402675",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "charlotte2020",
+  "dots": [
+    {
+      "x": 300.84375,
+      "y": 297.25,
+      "type": "2"
+    },
+    {
+      "x": 297.84375,
+      "y": 354.25,
+      "type": "2"
+    },
+    {
+      "x": 340.84375,
+      "y": 324.25,
+      "type": "2"
+    },
+    {
+      "x": 256.84375,
+      "y": 348.25,
+      "type": "2"
+    },
+    {
+      "x": 227.84375,
+      "y": 172.25,
+      "type": "2"
+    },
+    {
+      "x": 290.84375,
+      "y": 197.25,
+      "type": "2"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-04T07:58:21.108747",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

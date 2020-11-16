@@ -1,0 +1,33 @@
+{
+  "name": "rebekah4202",
+  "dots": [
+    {
+      "x": 140.671875,
+      "y": 307,
+      "type": "1"
+    },
+    {
+      "x": 224.671875,
+      "y": 278,
+      "type": "1"
+    },
+    {
+      "x": 204.671875,
+      "y": 370,
+      "type": "1"
+    },
+    {
+      "x": 153.671875,
+      "y": 159,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-22T15:15:09.100537",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

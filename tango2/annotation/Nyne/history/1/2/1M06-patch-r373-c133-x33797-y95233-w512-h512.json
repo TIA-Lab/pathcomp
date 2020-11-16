@@ -1,0 +1,28 @@
+{
+  "name": "Nyne",
+  "dots": [
+    {
+      "x": 245.814453125,
+      "y": 149.294921875,
+      "type": "1"
+    },
+    {
+      "x": 205.814453125,
+      "y": 127.294921875,
+      "type": "1"
+    },
+    {
+      "x": 245.814453125,
+      "y": 328.294921875,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-21T17:21:34.256507",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 12871.91.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.127 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

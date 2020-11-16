@@ -1,0 +1,48 @@
+{
+  "name": "missy06",
+  "dots": [
+    {
+      "x": 212.671875,
+      "y": 394,
+      "type": "1"
+    },
+    {
+      "x": 150.671875,
+      "y": 378,
+      "type": "1"
+    },
+    {
+      "x": 258.671875,
+      "y": 286,
+      "type": "1"
+    },
+    {
+      "x": 298.671875,
+      "y": 277,
+      "type": "1"
+    },
+    {
+      "x": 355.671875,
+      "y": 174,
+      "type": "1"
+    },
+    {
+      "x": 351.671875,
+      "y": 125,
+      "type": "1"
+    },
+    {
+      "x": 394.671875,
+      "y": 154,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-09T16:37:22.792659",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

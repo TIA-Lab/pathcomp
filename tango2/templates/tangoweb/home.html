@@ -1,0 +1,265 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'plugin/modal-video/modal-video.min.css' %}">
+<script src="{% static 'plugin/modal-video/jquery-modal-video.min.js' %}"></script>
+<script>
+$(function () {
+    $(".js-modal-btn").modalVideo();
+});
+</script>
+<style>
+    .image-shadow {
+        -webkit-box-shadow: 5px 5px 5px #666;
+        width:100%; 
+        margin-bottom:10px;
+    }
+</style>
+
+<div class="content tango-home-image">
+    <div class="container">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-9 text-white">
+                <h1 class="mt-4">Beat The Pathologists!</h1>
+                <p class="mt-2">Welcome to our competition! Your goal is to beat the pros and get as many points as possible. </p>
+                <p>The top 3 people in each age group will win cool prizes:</p>
+                <ul class="mb-4">
+                    <li><strong>1st Prize: </strong>£50 Amazon Gift Card</li>
+                    <li><strong>2nd Prize: </strong>£30 Amazon Gift Card</li>
+                    <li><strong>3rd Prize: </strong>£20 Amazon Gift Card</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <img src="{% static 'image/pathcomp.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content p-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+
+                <div class="card card-primary card-outline card-outline-tabs">
+                    <div class="card-header p-0 pt-1 border-bottom-0">
+                        <ul class="nav nav-tabs" id="custom-tabs-three-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="custom-tabs-introduction-tab" data-toggle="pill" href="#custom-tabs-introduction" role="tab" aria-controls="custom-tabs-introduction" aria-selected="true">Introduction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="custom-tabs-annotation-tab" data-toggle="pill" href="#custom-tabs-annotation" role="tab" aria-controls="custom-tabs-annotation" aria-selected="false">How to Annotate</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content" id="custom-tabs-three-tabContent">
+                            <div class="tab-pane fade show active" id="custom-tabs-introduction" role="tabpanel" aria-labelledby="custom-tabs-introduction-tab">
+                                <div>
+                                    <h4 class="text-blue">Can you beat the experts?</h4>
+                                    <p>Have a go at diagnosing diseases in our Beat The Pathologists competition.</p>
+                                    <p>Pathologists are scientists who study the causes and effects of diseases. They look at samples of body tissue for diagnostic or forensic purposes.</p>
+                                    <p>In this competition you’ll see exactly what a pathologist does, and you can try your hand at identifying (annotating) different types of tumours to give a diagnosis.</p>
+                                    <p>Not sure what a tumour is? It’s a lump on a part of the body caused by an unusual growth of tissue. It can be benign (not harmful) or malignant (cancerous).</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-blue">The competition</h4>
+                                    <p>There are four levels in the competition:
+                                        <ol>
+                                            <li>Mild</li>
+                                            <li>Hot</li>
+                                            <li>Spicy</li>
+                                            <li>Supercharger</li>
+                                        </ol>
+                                        <aside>You will have to pass each level to unlock the next. You can enter each level as many times as you wish.</aside>
+                                    </p>
+                                    <iframe class="my-2" width="100%" height="450" src="https://www.youtube.com/embed/9bZXXIfNT2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                </div>    
+                                <div>
+                                    <h4 class="text-blue">Prizes</h4>
+                                    <p>There are three categories: 
+                                        <ol>
+                                            <li>Up to Year 6 (Primary)</li>
+                                            <li>Y7 to Y11 (Secondary)</li>
+                                            <li>Y12 to Y13 (Sixth Form)</li>
+                                        </ol>
+                                    </p>
+                                    <p>Prizes are awarded to the top three scorers in each category.  
+                                        <ul>
+                                            <li>1st Prize: £50 Amazon Gift Card</li>
+                                            <li>2nd Prize: £30 Amazon Gift Card</li>
+                                            <li>3rd Prize: £20 Amazon Gift Card</li>
+                                        </ul>
+                                    </p>
+                                    <p>Everyone receives a Certificate of Participation at the end of the competition.</p>
+                                </div>   
+                                <div>
+                                    <h4 class="text-blue">Ready to enter?</h4>
+                                    <ol>
+                                        <li><a href="{% url 'tangoweb-register' %}">Complete the registration</a> to enter the competition</li>
+                                        <li>Take a look at the instructions on how to annotate</li>
+                                        <li>Head over to the <a href="{% url 'tangooff-home' %}">practice area</a> to get the hang of it</li>
+                                        <li>When you're ready, start the <a href="{% url 'tangoon-home' %}">competition</a></li>
+                                    </ol>
+                                </div> 
+                                <div>
+                                    <h4 class="text-blue">Teachers</h4>
+                                    <p>If you are a teacher, can you help us to get the word out about pathology for pupils interested in science or those looking at a medical career? <a href="{% url 'tangoweb-forteachers' %}">More Information...</a></p>
+                                </div> 
+                            </div>
+                            <div class="tab-pane fade" id="custom-tabs-annotation" role="tabpanel" aria-labelledby="custom-tabs-annotation-tab">
+                                <!-- <div>
+                                    <h4 class="text-blue">Glossary:</h4>
+                                    <ul>
+                                        <li><strong>Pathologist: </strong>a scientist who studies the causes and effects of diseases, especially one who examines laboratory samples of body tissue for diagnostic or forensic purposes.</li>
+                                        <li><strong>Tumour: </strong>a lump on a part of the body caused by abnormal growth of tissue - can be benign or malignant.</li>
+                                    <ul>
+                                </div> -->
+                                <!-- <iframe class="my-2" width="100%" height="450" src="https://www.youtube.com/embed/1Ow8aC2TShU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> -->
+                                <div>
+                                    <h4 class="text-blue">What to annotate?</h4>
+                                    <p>There are 4 different kinds of cells that need to be dotted on each image:<p>
+                                    <table style="width:100%;">
+                                    <tr>
+                                        <td style="padding-left:40px; width:70%; vertical-align:top;">
+                                            <strong>Positive tumour cell</strong>
+                                            <ul>
+                                                <li>cell color: brown</li>
+                                                <li>shape: normally larger and round</li>
+                                                <li>dot color: red</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <img class="image-shadow" src="{% static 'image/class1_positive_tumor.png' %}" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left:40px; width:70%; vertical-align:top;">
+                                            <strong>Negative tumour cell</strong>
+                                            <ul>
+                                                <li>cell color: blue</li>
+                                                <li>shape: normally larger and round</li>
+                                                <li>dot color: green</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <img class="image-shadow" src="{% static 'image/class2_negative_tumor.png' %}" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left:40px; width:70%; vertical-align:top;">
+                                            <strong>Positive non-tumour cell</strong>
+                                            <ul>
+                                                <li>cell color: brown</li>
+                                                <li>shape: normally smaller and pointy / angulated</li>
+                                                <li>dot color: yellow</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <img class="image-shadow" src="{% static 'image/class3_positive_nontumor.png' %}" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left:40px; width:70%; vertical-align:top;">
+                                            <strong>Negative non-tumour cell</strong>
+                                            <ul>
+                                                <li>cell color: blue</li>
+                                                <li>shape: normally smaller and pointy / angulated</li>
+                                                <li>dot color: blue</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <img class="image-shadow" src="{% static 'image/class4_negative_nontumor.png' %}" alt="">
+                                        </td>
+                                    </tr>
+                                    </table>
+                                    <p>You can have a practice here (Go to <a href="{% url 'tangooff-home' %}">Practice</a>) before starting the competition. Also look at the short video which gives you advice on what to look for.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-blue">How to annotate?</h4>
+                                    <p><strong>Step 1: </strong>Choose the cell type by pressing <kbd style="background-color: red;">Q</kbd>/<kbd style="background-color: green;">A</kbd>/<kbd style="background-color: yellow; color:black;">W</kbd>/<kbd style="background-color: blue;">S</kbd> or by using the selection list</p>
+                                    <img class="img-fluid" src="{% static 'image/step1.png' %}">
+                                    <p><strong>Step 2: </strong>Click on the cells to add dots to the image</p>
+                                    <img class="img-fluid" src="{% static 'image/step2.png' %}">
+                                    <p><strong>Step 3: </strong>Repeat Steps 1 and 2 until all of the cells have been annotated</p>
+                                    <p><strong>Step 4: </strong>Remove dots by pressing the Backspace key or point to a dot with your mouse and press <kbd>X</kbd></p>
+                                    <p><strong>Step 5: </strong>Press <kbd>R</kbd>/<kbd>H</kbd> to reveal/hide the correct answers (Practice session only). Press <kbd>C</kbd> to clear the annotations and try again</p>
+                                    <p><strong>Step 6: </strong>After adding all of the dots, press the Enter key or click ‘Display and Submit Dots’</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-red">Note:</h4>
+                                    <ol>
+                                        <li>Please only label cells which are mostly inside of the black square</li>
+                                        <li>Not all 4 types of cells may be in each image</li>
+                                        <li>Please only use one dot for each cell.<br>(More than one dot for each cell may reduce the amount of points you are awarded)</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card -->
+                </div>
+
+            </div> <!-- /.col-md-9 -->
+            <div class="col-md-3">
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title m-0">Important Dates</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="col-12">
+                            <div class="info-box mb-3">
+                              <span class="info-box-icon bg-success elevation-1"><i class="fas fa-toggle-on"></i></span>
+                
+                              <div class="info-box-content">
+                                <span class="info-box-text">Opening</span>
+                                <span class="info-box-number">17/10/2020</span>
+                              </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+                            <div class="info-box mb-3">
+                              <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-toggle-off"></i></span>
+                
+                              <div class="info-box-content">
+                                <span class="info-box-text">Closing</span>
+                                <span class="info-box-number">16/11/2020</span>
+                              </div>
+                              <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title m-0">Download</h5>
+                    </div>
+                    <div class="card-body">
+                        <a href="{% static 'data/Beat_the_Pathologist.pdf' %}"><i class="fas fa-file-pdf"></i> Beat the Pathologist Poster </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title m-0">Sponsors</h5>
+                    </div>
+                    <div class="card-body">
+                        <img class="img-fluid mb-3" src="{% static 'image/pathlake-logo.jpg' %}" />
+                        <img class="img-fluid mb-3" src="{% static 'image/warwicklogo.png' %}" />
+                        <img class="img-fluid mb-3" src="{% static 'image/oxfordlogo-blue-square.png' %}" />
+                        <img class="img-fluid mb-3" src="{% static 'image/brclogo.jpg' %}" />
+                        <img class="img-fluid mb-3" src="{% static 'image/nottinghamlogo.png' %}" />
+                    </div>
+
+                </div>
+            </div> <!-- /.col-md-6 -->
+        </div> <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+{% endblock content %}

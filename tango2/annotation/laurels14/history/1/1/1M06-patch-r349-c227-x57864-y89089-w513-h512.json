@@ -1,0 +1,23 @@
+{
+  "name": "laurels14",
+  "dots": [
+    {
+      "x": 280.171875,
+      "y": 185,
+      "type": "1"
+    },
+    {
+      "x": 374.171875,
+      "y": 336,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-28T19:28:11.001220",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

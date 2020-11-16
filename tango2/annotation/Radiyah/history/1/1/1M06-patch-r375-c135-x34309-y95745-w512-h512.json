@@ -1,0 +1,38 @@
+{
+  "name": "Radiyah",
+  "dots": [
+    {
+      "x": 283.5104064941406,
+      "y": 192,
+      "type": "1"
+    },
+    {
+      "x": 207.51040649414062,
+      "y": 131,
+      "type": "1"
+    },
+    {
+      "x": 175.51040649414062,
+      "y": 234,
+      "type": "1"
+    },
+    {
+      "x": 147.51040649414062,
+      "y": 262,
+      "type": "1"
+    },
+    {
+      "x": 164.51040649414062,
+      "y": 129,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-27T18:53:23.275475",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

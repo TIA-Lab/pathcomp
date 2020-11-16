@@ -1,0 +1,48 @@
+{
+  "name": "JaeWon",
+  "dots": [
+    {
+      "x": 167.671875,
+      "y": 149,
+      "type": "1"
+    },
+    {
+      "x": 212.671875,
+      "y": 131,
+      "type": "1"
+    },
+    {
+      "x": 266.671875,
+      "y": 189,
+      "type": "1"
+    },
+    {
+      "x": 339.671875,
+      "y": 305,
+      "type": "1"
+    },
+    {
+      "x": 376.671875,
+      "y": 350,
+      "type": "1"
+    },
+    {
+      "x": 286.671875,
+      "y": 258,
+      "type": "1"
+    },
+    {
+      "x": 172.671875,
+      "y": 214,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-07T20:37:43.581952",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

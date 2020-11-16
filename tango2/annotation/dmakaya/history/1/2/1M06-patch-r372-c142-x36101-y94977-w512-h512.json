@@ -1,0 +1,38 @@
+{
+  "name": "dmakaya",
+  "dots": [
+    {
+      "x": 236.171875,
+      "y": 267,
+      "type": "1"
+    },
+    {
+      "x": 208.171875,
+      "y": 231,
+      "type": "1"
+    },
+    {
+      "x": 142.171875,
+      "y": 333,
+      "type": "1"
+    },
+    {
+      "x": 298.171875,
+      "y": 305,
+      "type": "1"
+    },
+    {
+      "x": 324.171875,
+      "y": 346,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-21T17:19:25.164069",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13310.59.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.84 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

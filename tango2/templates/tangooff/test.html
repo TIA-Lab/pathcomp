@@ -1,0 +1,346 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="content">
+    <div class="container p-2">
+
+        <div class="row">
+            <div class="col-12">
+
+                <div class="card card-primary card-outline">
+                    <div class="card-header">
+                        <h5 class="card-title">Test</h5>
+                    </div>
+                    <div class="card-body">
+
+                        <form action="{% url 'tangooff-testsave' %}" method="POST" id="form">
+                            {% csrf_token %}
+                            <input id="patch" type="hidden" name="patch" value="{% if patch is not None %}/static/patch/image/{{ patch }}{% endif %}" />
+                            <input id="dotsInput" type="hidden" name="dots" value="" />
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title">Practice ( {{ patch_done }} ) / Total ( {{ patch_total }} )</h5>
+                                            <h5 id="lblResult" class="card-title float-right"></h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <p>
+                                                    <canvas id="canvas" width="{{ patch_width }}" height="{{ patch_height }}"></canvas>
+                                                </p>
+                                            </div>
+                                            <h5><b>Cell Count Info</b></h5>
+                                            <table class="table table-sm">
+                                                <tbody>
+                                                <tr>
+                                                    <th>Positive tumor cells</th>
+                                                    <td id="pitc">0</td>
+                                                    <th>Negative tumor cells</th>
+                                                    <td id="nitc">0</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Positive non-tumor cells</th>
+                                                    <td id="pntc">0</td>
+                                                    <th>Negative non-tumor cells</th>
+                                                    <td id="nntc">0</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title">Keyboard Shortcuts</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <dl>
+                                                <dt>Cell Selection</dt>
+                                                <dd><img class="tango-key-icon" src="{% static 'image/q-100.png' %}"> : positive tumor cells</dd>
+                                                <dd><img class="tango-key-icon" src="{% static 'image/z-100.png' %}"> : negative tumor cells</dd>
+                                                <dd><img class="tango-key-icon" src="{% static 'image/p-100.png' %}"> : positive non-tumor cells</dd>
+                                                <dd><img class="tango-key-icon" src="{% static 'image/m-100.png' %}"> : negative non-tumor cells</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Cell Deletion</dt>
+                                                <dd><img class="tango-key-icon" src="{% static 'image/backspace-100.png' %}"> : remove the most recent dot</dd>
+                                                <dd><img class="tango-key-icon" src="{% static 'image/x-100.png' %}"> : delete a dot after hovering over</dd>
+                                            </dl>  
+                                            <dl>
+                                                <dt>Submission</dt>
+                                                <dd><img class="tango-key-icon" src="{% static 'image/enter-100.png' %}"> : display answer first time and submit the annotation second time</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title">Selection</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-group row">
+                                                <label class="col-3 col-form-label">Style:</label>
+                                                <div class="col-9">
+                                                    <select class="form-control" id="listCell">
+                                                        <option value = "1">Positive tumor cell</option>
+                                                        <option value = "2">Negative tumor cell</option>
+                                                        <option value = "3">Positive non-tumor cell</option>
+                                                        <option value = "4">Negative non-tumor cell</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="button" class="btn btn-sm btn-block btn-warning" value="Undo" id="btnUndo"/>
+                                                <input type="button" class="btn btn-sm btn-block btn-danger"  value="Clear All" id="btnClear"/>
+                                                <input type="button" class="btn btn-sm btn-block btn-primary" value="Display and Submit Dots" id="btnSubmit"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div><!-- /.card -->
+            </div>
+
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<script>
+$(function () {
+    $form = $('form');
+    $dotsInput = $('#dotsInput');
+    $lblResult = $('#lblResult');
+    $btnSubmit = $('#btnSubmit');
+    $btnClear = $('#btnClear');
+    $btnUndo = $('#btnUndo');
+    $listCell = $('#listCell')
+
+    $pitc = $('#pitc')
+    $nitc = $('#nitc')
+    $pntc = $('pntc')
+    $nntc = $('nntc')
+
+    $btnSubmit.on('click', doSubmitForm)
+    $btnUndo.on('click', undo);
+    $btnClear.on('click', function() {
+        const really = confirm(
+            "Are you sure you want to clear all the points?"
+        );
+        if (really) clear();
+    });
+
+    let cntCell = {
+        pitc: 0,
+        nitc: 0, 
+        pntc: 0,
+        nntc: 0
+    };
+
+    let mousePos;
+    let dots = [];
+    let boolResult = false;
+
+    ////////////////////////////////////////////////////////////////////
+    // Canvas
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const margin = 10;
+    const marginWidth = 3;
+    const img = new Image();
+
+    img.src = "{% if patch is None %}{% static 'image/no_image_available.png' %}{% else %}/static/patch/practice/image/{{ patch }}{% endif %}"
+    img.onload = function () {
+        ctx.drawImage(img, 0, 0);
+        drawMargin();
+    };
+
+    canvas.addEventListener('click', function (e) {
+        if (boolResult == true) return;
+
+        const pos = getCursorPosition(canvas, e);
+        pos['type'] = $listCell.val();
+
+        displayCellCountInfo(pos['type']);
+
+        dots.push(pos);
+        updateForm();
+
+        drawDot(pos);
+        setMouse(e);
+    });
+
+    function displayCellCountInfo(type) {
+        switch (Number(type)) {
+            case 1: cntCell.pitc++; $pitc.html(cntCell.pitc); break;
+            case 2: cntCell.nitc++; $nitc.html(cntCell.nitc); break;
+            case 3: cntCell.pntc++; $pntc.html(cntCell.pntc); break;
+            case 4: cntCell.nntc++; $nntc.html(cntCell.nntc); break;
+        }
+        
+    }
+
+    function drawDots(dots) {
+        dots.forEach(function(dot) {
+            drawDot(dot, null, 'black')
+        });
+    }
+
+    function drawDot(pos, color = 'green', strokecolor=null) {
+        switch (Number(pos['type']) ) {
+            case 1: color = 'red';      break;
+            case 2: color = 'green';    break;
+            case 3: color = 'yellow';   break;
+            case 4: color = 'blue';     break;
+            default: color = 'gray';
+        }
+
+        ctx.beginPath();
+        ctx.arc(pos.x, pos.y, 5, 0, 2 * Math.PI);
+        ctx.strokeStyle = strokecolor == null ? color : strokecolor;
+        ctx.lineWidth = strokecolor == null ? 3 : 6;
+        ctx.fillStyle = color;
+        ctx.stroke();
+        ctx.fill();
+        console.log(ctx.lineWidth)
+    }
+
+    function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0);
+        for (let i = 0; i < dots.length; i++) {
+            const d = dots[i];
+            drawDot(d);
+        }
+
+        drawMargin();
+    }
+
+    function drawMargin() {
+        const rect = canvas.getBoundingClientRect();
+        ctx.setLineDash([]);
+        ctx.strokeStyle = 'pink';
+        ctx.lineWidth = marginWidth;
+        ctx.globalCompositeOperation = 'difference';
+        ctx.strokeRect(
+            margin,
+            margin,
+            rect.width - 2 * margin,
+            rect.height - 2 * margin,
+        );
+        // Reset
+        ctx.setLineDash([]);
+        ctx.globalCompositeOperation = 'source-over';
+    }
+    ////////////////////////////////////////////////////////////////////
+
+    $(document).on('mousemove', setMouse);
+    $(document).on('mouseenter', setMouse);
+    $(document).on('keydown', keyHandler);
+
+    function keyHandler(e) {
+        var key = e.originalEvent.key.toLowerCase();
+        console.log(key)
+        switch (key) {
+            case 'q': $listCell.val('1');       break;
+            case 'z': $listCell.val('2');       break;
+            case 'p': $listCell.val('3');       break;
+            case 'm': $listCell.val('4');       break;
+            case 'x': doKeyActionX(e);          break;
+            case 'enter': doSubmitForm(e);      break;
+            case 'backspace': doBackspace(e);   break;
+        }
+    }
+
+    function setMouse(event) {
+        mousePos = getCursorPosition(canvas, event);
+    }
+
+    function updateForm() {
+        dotsInput.value = JSON.stringify(dots);
+    }
+
+    function getCursorPosition(canvas, event) {
+        const rect = canvas.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        return { x: x, y: y };
+    }
+
+    function doKeyActionX(e){
+        const pos = getCursorPosition(canvas, e);
+        const valid = dots.filter(function (d) {
+            return Math.pow(d.x - mousePos.x, 2) + Math.pow(d.y - mousePos.y, 2) < 50; // 50 is pow(5, 2) + pow(5, 2), 5 is radius
+        });
+
+        if (!valid.length)
+            return;
+
+        const sorted = valid.sort(function (a, b) {
+            let da = Math.pow(a.x - mousePos.x, 2) + Math.pow(a.y - mousePos.y, 2);
+            let db = Math.pow(b.x - mousePos.x, 2) + Math.pow(b.y - mousePos.y, 2);
+            return da - db;
+        });
+
+        dots.splice(dots.indexOf(sorted[0]), 1);
+        updateForm();
+        draw();
+    }
+
+    function doBackspace(e) {
+        e.preventDefault();
+        undo();
+    }
+
+    function displayResult(e) {
+        //prevent Default functionality
+        e.preventDefault();
+        formData = {
+            'patch': $('#patch').val(),
+            'dots': $dotsInput.val(),
+            'csrfmiddlewaretoken': '{{ csrf_token }}',
+        }
+        $.ajax({
+                url: "{% url 'tangooff-testdisplay' %}",
+                type: 'post',
+                data: formData,
+                success: function(obj) {
+                    drawDots(obj.data.dots);
+                    $lblResult.html(obj.matched + ' matched')
+                },
+                error: function(xhr, textStatus, errorThrown){
+                    alert('Sorry that the message cannot be added to database');
+                }
+        });
+    }
+
+    function doSubmitForm(e) {
+        e.preventDefault();
+        if (boolResult == false) {
+            boolResult = true;
+            displayResult(e);
+        } else {
+            $form.submit();
+        }
+    }
+
+    function clear() {
+        dots = [];
+        updateForm();
+        draw();
+    }
+
+    function undo() {
+        dots.pop();
+        updateForm();
+        draw();
+    }
+});
+
+</script>
+{% endblock content %}

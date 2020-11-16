@@ -1,0 +1,33 @@
+{
+  "name": "scarlet",
+  "dots": [
+    {
+      "x": 141.171875,
+      "y": 308,
+      "type": "1"
+    },
+    {
+      "x": 152.171875,
+      "y": 166,
+      "type": "1"
+    },
+    {
+      "x": 227.171875,
+      "y": 283,
+      "type": "1"
+    },
+    {
+      "x": 210.171875,
+      "y": 370,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-21T13:58:54.193689",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13310.76.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.108 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

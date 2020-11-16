@@ -1,0 +1,28 @@
+{
+  "name": "Rees",
+  "dots": [
+    {
+      "x": 211.671875,
+      "y": 356,
+      "type": "3"
+    },
+    {
+      "x": 248.671875,
+      "y": 303,
+      "type": "3"
+    },
+    {
+      "x": 181.671875,
+      "y": 285,
+      "type": "3"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-29T06:43:38.138934",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

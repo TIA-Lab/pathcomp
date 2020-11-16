@@ -1,0 +1,38 @@
+{
+  "name": "6ahgarnham",
+  "dots": [
+    {
+      "x": 143.171875,
+      "y": 308,
+      "type": "1"
+    },
+    {
+      "x": 217.171875,
+      "y": 366,
+      "type": "1"
+    },
+    {
+      "x": 230.171875,
+      "y": 277,
+      "type": "1"
+    },
+    {
+      "x": 192.171875,
+      "y": 334,
+      "type": "1"
+    },
+    {
+      "x": 157.171875,
+      "y": 163,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-24T11:10:05.315285",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13099.110.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.136 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

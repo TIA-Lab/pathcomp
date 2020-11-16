@@ -1,0 +1,23 @@
+{
+  "name": "Connie_Duncan",
+  "dots": [
+    {
+      "x": 272,
+      "y": 189,
+      "type": "1"
+    },
+    {
+      "x": 370,
+      "y": 334,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-26T14:00:33.159937",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

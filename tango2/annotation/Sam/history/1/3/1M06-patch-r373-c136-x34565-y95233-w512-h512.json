@@ -1,0 +1,23 @@
+{
+  "name": "Sam",
+  "dots": [
+    {
+      "x": 238.57498168945312,
+      "y": 226.1999969482422,
+      "type": "1"
+    },
+    {
+      "x": 246.57498168945312,
+      "y": 307.1999969482422,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-23T06:46:00.364381",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

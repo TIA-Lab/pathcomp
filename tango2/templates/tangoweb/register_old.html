@@ -1,0 +1,42 @@
+{% extends "layout-empty.html" %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="register-box" style="width:500px;">
+    <div class="register-logo">
+        <a href="{% url 'tangoweb-home' %}"><b>Tango2</b></a>
+    </div>
+
+    <div class="card">
+        <div class="card-body register-card-body">
+            <p class="login-box-msg">Register a new membership</p>
+
+            <form action="{% url 'tangoweb-register' %}" method="post">
+                {% csrf_token %}
+                <fieldset class="form-group">
+                    {{ form|crispy }}
+                </fieldset>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="{% url 'tangoweb-home' %}"><i class="fas fa-home"></i> Home </a>
+                    </div>
+                    <div class="col-4">&nbsp;</div>
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    </div>
+                </div>
+{%  if messages %}
+{%      for message in messages %}
+                <div style="margin:20px 0px;" class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                </div>
+{%      endfor %}
+{%  endif %}
+            </form>
+        </div>
+
+    </div><!-- /.card -->
+</div> <!-- /.register-box -->
+{% endblock content %}

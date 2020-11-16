@@ -1,0 +1,23 @@
+{
+  "name": "ProfessorX",
+  "dots": [
+    {
+      "x": 244.16668701171875,
+      "y": 342.8833312988281,
+      "type": "1"
+    },
+    {
+      "x": 251.16668701171875,
+      "y": 140.88333129882812,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-07T14:06:13.826220",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:81.0) Gecko/20100101 Firefox/81.0",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "M_Yahie",
+  "dots": [
+    {
+      "x": 319.171875,
+      "y": 189,
+      "type": "1"
+    },
+    {
+      "x": 228.171875,
+      "y": 348,
+      "type": "1"
+    },
+    {
+      "x": 270.171875,
+      "y": 350,
+      "type": "1"
+    },
+    {
+      "x": 365.171875,
+      "y": 368,
+      "type": "1"
+    },
+    {
+      "x": 329.171875,
+      "y": 379,
+      "type": "1"
+    },
+    {
+      "x": 142.171875,
+      "y": 373,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-28T13:24:34.000186",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13421.73.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.112 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "sahithiv29",
+  "dots": [
+    {
+      "x": 142.95138549804688,
+      "y": 169.73611068725586,
+      "type": "1"
+    },
+    {
+      "x": 130.95138549804688,
+      "y": 333.73611068725586,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-20T18:50:08.850662",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13099.110.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.136 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

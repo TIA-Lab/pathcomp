@@ -1,0 +1,33 @@
+{
+  "name": "Sherbet_Otter",
+  "dots": [
+    {
+      "x": 245.671875,
+      "y": 219,
+      "type": "1"
+    },
+    {
+      "x": 245.671875,
+      "y": 303,
+      "type": "1"
+    },
+    {
+      "x": 225.671875,
+      "y": 370,
+      "type": "1"
+    },
+    {
+      "x": 128.671875,
+      "y": 222,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-24T08:51:32.398203",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36 Edg/86.0.622.51",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "y2007",
+  "dots": [
+    {
+      "x": 327.517333984375,
+      "y": 218.29165649414062,
+      "type": "1"
+    },
+    {
+      "x": 337.517333984375,
+      "y": 190.29165649414062,
+      "type": "1"
+    },
+    {
+      "x": 369.517333984375,
+      "y": 185.29165649414062,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-04T19:34:59.466014",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

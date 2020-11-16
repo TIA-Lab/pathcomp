@@ -1,0 +1,53 @@
+{
+  "name": "6mdperamunugamage@ash.bucks.sch.uk",
+  "dots": [
+    {
+      "x": 285.171875,
+      "y": 239,
+      "type": "1"
+    },
+    {
+      "x": 193.171875,
+      "y": 230,
+      "type": "1"
+    },
+    {
+      "x": 280.171875,
+      "y": 327,
+      "type": "1"
+    },
+    {
+      "x": 314.171875,
+      "y": 298,
+      "type": "1"
+    },
+    {
+      "x": 379.171875,
+      "y": 328,
+      "type": "1"
+    },
+    {
+      "x": 368.171875,
+      "y": 184,
+      "type": "1"
+    },
+    {
+      "x": 267.171875,
+      "y": 369,
+      "type": "1"
+    },
+    {
+      "x": 238.171875,
+      "y": 381,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-21T08:53:57.849592",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13310.93.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.133 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Jemima123",
+  "dots": [
+    {
+      "x": 239.171875,
+      "y": 217,
+      "type": "1"
+    },
+    {
+      "x": 246.171875,
+      "y": 304,
+      "type": "1"
+    },
+    {
+      "x": 234.171875,
+      "y": 382,
+      "type": "1"
+    },
+    {
+      "x": 126.171875,
+      "y": 228,
+      "type": "1"
+    },
+    {
+      "x": 144.171875,
+      "y": 409,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-28T16:47:51.474971",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Safari/605.1.15",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

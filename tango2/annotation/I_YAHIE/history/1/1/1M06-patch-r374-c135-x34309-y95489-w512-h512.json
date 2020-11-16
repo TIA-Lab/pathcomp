@@ -1,0 +1,33 @@
+{
+  "name": "I_YAHIE",
+  "dots": [
+    {
+      "x": 351.171875,
+      "y": 125,
+      "type": "1"
+    },
+    {
+      "x": 357.171875,
+      "y": 165,
+      "type": "1"
+    },
+    {
+      "x": 300.171875,
+      "y": 277,
+      "type": "1"
+    },
+    {
+      "x": 250.171875,
+      "y": 285,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-28T13:37:06.963610",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13310.93.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.133 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

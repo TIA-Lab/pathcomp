@@ -1,0 +1,28 @@
+{
+  "name": "Florence",
+  "dots": [
+    {
+      "x": 244.17105102539062,
+      "y": 333.7368469238281,
+      "type": "1"
+    },
+    {
+      "x": 245.17105102539062,
+      "y": 150.73684692382812,
+      "type": "1"
+    },
+    {
+      "x": 204.17105102539062,
+      "y": 130.73684692382812,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-28T22:18:28.176188",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13421.73.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.112 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

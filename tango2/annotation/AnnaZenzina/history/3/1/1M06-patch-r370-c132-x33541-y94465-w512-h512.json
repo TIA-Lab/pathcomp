@@ -1,0 +1,43 @@
+{
+  "name": "AnnaZenzina",
+  "dots": [
+    {
+      "x": 290.171875,
+      "y": 149,
+      "type": "3"
+    },
+    {
+      "x": 164.171875,
+      "y": 166,
+      "type": "3"
+    },
+    {
+      "x": 165.171875,
+      "y": 334,
+      "type": "2"
+    },
+    {
+      "x": 169.171875,
+      "y": 305,
+      "type": "2"
+    },
+    {
+      "x": 126.171875,
+      "y": 298,
+      "type": "2"
+    },
+    {
+      "x": 258.171875,
+      "y": 277,
+      "type": "2"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-03T23:43:11.907075",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

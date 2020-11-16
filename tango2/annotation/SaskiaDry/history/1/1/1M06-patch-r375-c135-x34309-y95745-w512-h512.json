@@ -1,0 +1,38 @@
+{
+  "name": "SaskiaDry",
+  "dots": [
+    {
+      "x": 216.171875,
+      "y": 145,
+      "type": "1"
+    },
+    {
+      "x": 289.171875,
+      "y": 188,
+      "type": "1"
+    },
+    {
+      "x": 168.171875,
+      "y": 231,
+      "type": "1"
+    },
+    {
+      "x": 154.171875,
+      "y": 254,
+      "type": "1"
+    },
+    {
+      "x": 157.171875,
+      "y": 137,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-30T10:17:15.317993",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

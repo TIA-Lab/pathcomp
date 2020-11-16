@@ -1,0 +1,38 @@
+{
+  "name": "lottie21",
+  "dots": [
+    {
+      "x": 316.671875,
+      "y": 181,
+      "type": "1"
+    },
+    {
+      "x": 355.671875,
+      "y": 365,
+      "type": "1"
+    },
+    {
+      "x": 322.671875,
+      "y": 381,
+      "type": "1"
+    },
+    {
+      "x": 223.671875,
+      "y": 350,
+      "type": "1"
+    },
+    {
+      "x": 143.671875,
+      "y": 377,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-05T09:45:39.400675",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

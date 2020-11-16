@@ -1,0 +1,48 @@
+{
+  "name": "Bimbim.20",
+  "dots": [
+    {
+      "x": 143.171875,
+      "y": 242,
+      "type": "1"
+    },
+    {
+      "x": 172.171875,
+      "y": 291,
+      "type": "1"
+    },
+    {
+      "x": 359.171875,
+      "y": 217,
+      "type": "1"
+    },
+    {
+      "x": 336.171875,
+      "y": 224,
+      "type": "1"
+    },
+    {
+      "x": 340.171875,
+      "y": 245,
+      "type": "1"
+    },
+    {
+      "x": 379.171875,
+      "y": 334,
+      "type": "1"
+    },
+    {
+      "x": 327.171875,
+      "y": 370,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-03T09:32:33.725013",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

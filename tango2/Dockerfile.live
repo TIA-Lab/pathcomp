@@ -1,0 +1,15 @@
+# Use the Python3.7.2 image
+FROM python:3.7.2-stretch
+
+ENV PYTHONBUFFERED=1
+ENV WEBAPP_DIR=/annogate
+
+RUN mkdir -p /var/log/gunicorn
+RUN mkdir $WEBAPP_DIR
+
+WORKDIR $WEBAPP_DIR
+
+ADD requirements.txt $WEBAPP_DIR/
+RUN pip install -r requirements.txt
+
+ADD . $WEBAPP_DIR

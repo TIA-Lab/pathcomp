@@ -1,0 +1,28 @@
+{
+  "name": "missy06",
+  "dots": [
+    {
+      "x": 283.171875,
+      "y": 184,
+      "type": "1"
+    },
+    {
+      "x": 351.171875,
+      "y": 119,
+      "type": "1"
+    },
+    {
+      "x": 365.171875,
+      "y": 337,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-02T17:40:24.415074",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

@@ -1,0 +1,171 @@
+{% extends "layout.html" %}
+    
+{% load tango_filters %}
+{% load static %}
+
+{% block content %}
+
+<!-- DataTables -->
+<link rel="stylesheet" href="{% static 'theme/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css' %}">
+<link rel="stylesheet" href="{% static 'theme/plugins/datatables-responsive/css/responsive.bootstrap4.min.css' %}">
+
+<script src="{% static 'theme/plugins/datatables/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'theme/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js' %}"></script>
+<script src="{% static 'theme/plugins/datatables-responsive/js/dataTables.responsive.min.js' %}"></script>
+<script src="{% static 'theme/plugins/datatables-responsive/js/responsive.bootstrap4.min.js' %}"></script>
+<script>
+$(function () {
+    $("#annotationTable").DataTable({
+        "responsive": true,
+        "autoWidth": false,
+        "paging": false,
+        "searching": false,
+        "order": [[2, 'desc']]
+    });
+});
+</script>
+
+<style>
+    .icon-chilli {
+        width:50px;
+    }
+    .small-box a {
+        color:#fff;
+    }
+    .small-box h3 { 
+        font-size: 1.8rem;
+    }
+</style>
+<div class="content p-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="card card-primary card-outline">
+                    <div class="card-header">
+                        <h5 class="card-title">Competition</h5>
+                    </div>
+                    <div class="card-body">
+
+                        <div>
+                            <p>Before entering the competition, please read the <a href="{% url 'tangoweb-termsandconditions' %}">Terms and Conditions</a>. There are 3 levels in the competition. You are able to unlock the next level if you get over 50%. Good luck and have fun! </p>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="small-box bg-success py-3">
+                                    <a href="{% if level1 == 1 %}{% url 'tangoon-start' level=1 %}{% else %}#{% endif %}">
+                                        <div class="{% if level1 == 1 %}tango-overlay-normal{% else %}overlay{% endif %}">
+                                            <i class="far fa-3x {% if level1 == 1 %}fa-play-circle{% else %}fa-pause-circle{% endif %}"></i>
+                                        </div>
+                                    </a>
+                                    <div class="inner">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h3>Mild Level</h3>
+                                            </div>
+                                            <div class="col-6 text-right">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="small-box bg-info py-3">
+                                    <div class="{% if level2 == 1 %}tango-overlay-normal{% else %}overlay{% endif %}">
+                                        <a href="{% if level2 == 1 %}{% url 'tangoon-start' level=2 %}{% else %}#{% endif %}">
+                                            <i class="far fa-3x {% if level2 == 1 %}fa-play-circle{% else %}fa-pause-circle{% endif %}"></i>
+                                        </a>
+                                    </div>
+                                    <div class="inner">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h3>Hot Level</h3>
+                                            </div>
+                                            <div class="col-6 text-right">
+                                                <img class="icon-chilli" src="{% static 'image/chili-icon-sm1.png' %}"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="small-box bg-primary py-3">
+                                    
+                                    <div class="{% if level3 == 1 %}tango-overlay-normal{% else %}overlay{% endif %}">
+                                        <a href="{% if level3 == 1 %}{% url 'tangoon-start' level=3 %}{% else %}#{% endif %}">
+                                            <i class="far fa-3x {% if level3 == 1 %}fa-play-circle{% else %}fa-pause-circle{% endif %}"></i>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="inner">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h3>Spicy Level</h3>
+                                            </div>
+                                            <div class="col-6 text-right">
+                                                <img class="icon-chilli" src="{% static 'image/chili-icon-sm1.png' %}"/>
+                                                <img class="icon-chilli" src="{% static 'image/chili-icon-sm1.png' %}"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="small-box bg-danger py-3">
+                                    
+                                    <div class="{% if level4 == 1 %}tango-overlay-normal{% else %}overlay{% endif %}">
+                                        <a href="{% if level4 == 1 %}{% url 'tangoon-start' level=4 %}{% else %}#{% endif %}">
+                                            <i class="far fa-3x {% if level4 == 1 %}fa-play-circle{% else %}fa-pause-circle{% endif %}"></i>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="inner">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h3>Supercharger Level</h3>
+                                            </div>
+                                            <div class="col-6 text-right">
+                                                <img class="icon-chilli" src="{% static 'image/chili-icon-sm1.png' %}"/>
+                                                <img class="icon-chilli" src="{% static 'image/chili-icon-sm1.png' %}"/>
+                                                <img class="icon-chilli" src="{% static 'image/chili-icon-sm1.png' %}"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.card -->
+            </div> <!-- /.col-md-10 -->
+            <div class="col-md-5">
+                <div class="card card-primary card-outline">
+                    <div class="card-header">
+                        <h5 class="card-title m-0">Competition History</h5>
+                    </div>
+                    <div class="card-body">
+                        <table id="annotationTable" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>Score</th>
+                                    <th>Created</th>
+                                </tr>
+                            </thead>
+                            <tboday>
+                            {%  for aUserBoard in boards %}
+                                <tr>
+                                    <td>{{ aUserBoard.level }}</td>
+                                    <td>{% getScore aUserBoard.correctcount aUserBoard.questioncount %}</td>
+                                    <td>{{ aUserBoard.created|date:"Y-m-d H:i:s" }}</td>
+                                </tr>
+                            {%  endfor %} 
+                            </tboday>
+                            </table>                         
+                    </div>
+                </div>
+            </div> <!-- /.col-md-6 -->
+        </div> <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+{% endblock content %}

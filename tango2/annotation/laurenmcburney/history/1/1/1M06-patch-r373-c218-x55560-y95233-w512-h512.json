@@ -1,0 +1,68 @@
+{
+  "name": "laurenmcburney",
+  "dots": [
+    {
+      "x": 196,
+      "y": 141,
+      "type": "1"
+    },
+    {
+      "x": 149,
+      "y": 235,
+      "type": "1"
+    },
+    {
+      "x": 194,
+      "y": 253,
+      "type": "1"
+    },
+    {
+      "x": 192,
+      "y": 334,
+      "type": "1"
+    },
+    {
+      "x": 166,
+      "y": 369,
+      "type": "1"
+    },
+    {
+      "x": 249,
+      "y": 233,
+      "type": "1"
+    },
+    {
+      "x": 292,
+      "y": 278,
+      "type": "1"
+    },
+    {
+      "x": 276,
+      "y": 352,
+      "type": "1"
+    },
+    {
+      "x": 294,
+      "y": 135,
+      "type": "1"
+    },
+    {
+      "x": 343,
+      "y": 133,
+      "type": "1"
+    },
+    {
+      "x": 378,
+      "y": 352,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-26T13:08:49.029034",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

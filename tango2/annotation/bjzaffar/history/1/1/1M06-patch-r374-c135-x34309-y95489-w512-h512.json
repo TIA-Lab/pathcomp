@@ -1,0 +1,28 @@
+{
+  "name": "bjzaffar",
+  "dots": [
+    {
+      "x": 249.171875,
+      "y": 284,
+      "type": "1"
+    },
+    {
+      "x": 297.171875,
+      "y": 271,
+      "type": "1"
+    },
+    {
+      "x": 354.171875,
+      "y": 165,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-07T13:13:34.930148",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

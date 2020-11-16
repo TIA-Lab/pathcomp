@@ -1,0 +1,38 @@
+{
+  "name": "5heali",
+  "dots": [
+    {
+      "x": 160.171875,
+      "y": 250,
+      "type": "1"
+    },
+    {
+      "x": 167.171875,
+      "y": 229,
+      "type": "1"
+    },
+    {
+      "x": 214.171875,
+      "y": 138,
+      "type": "1"
+    },
+    {
+      "x": 280.171875,
+      "y": 191,
+      "type": "1"
+    },
+    {
+      "x": 156.171875,
+      "y": 132,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-20T19:08:17.064157",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13310.93.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.133 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

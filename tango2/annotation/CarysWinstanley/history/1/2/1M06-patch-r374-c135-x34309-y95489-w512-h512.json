@@ -1,0 +1,43 @@
+{
+  "name": "CarysWinstanley",
+  "dots": [
+    {
+      "x": 293.171875,
+      "y": 271,
+      "type": "1"
+    },
+    {
+      "x": 253.171875,
+      "y": 287,
+      "type": "1"
+    },
+    {
+      "x": 214.171875,
+      "y": 395,
+      "type": "1"
+    },
+    {
+      "x": 148.171875,
+      "y": 378,
+      "type": "1"
+    },
+    {
+      "x": 347.171875,
+      "y": 170,
+      "type": "1"
+    },
+    {
+      "x": 347.171875,
+      "y": 140,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-20T21:22:00.705891",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

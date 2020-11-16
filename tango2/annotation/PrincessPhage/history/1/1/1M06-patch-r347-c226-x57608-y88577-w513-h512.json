@@ -1,0 +1,58 @@
+{
+  "name": "PrincessPhage",
+  "dots": [
+    {
+      "x": 381.671875,
+      "y": 348,
+      "type": "1"
+    },
+    {
+      "x": 336.671875,
+      "y": 316,
+      "type": "1"
+    },
+    {
+      "x": 317.671875,
+      "y": 266,
+      "type": "1"
+    },
+    {
+      "x": 283.671875,
+      "y": 252,
+      "type": "1"
+    },
+    {
+      "x": 184.671875,
+      "y": 306,
+      "type": "1"
+    },
+    {
+      "x": 208.671875,
+      "y": 257,
+      "type": "1"
+    },
+    {
+      "x": 240.671875,
+      "y": 245,
+      "type": "1"
+    },
+    {
+      "x": 142.671875,
+      "y": 150,
+      "type": "1"
+    },
+    {
+      "x": 192.671875,
+      "y": 136,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-03T22:09:09.856616",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

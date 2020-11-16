@@ -1,0 +1,23 @@
+{
+  "name": "Henhen",
+  "dots": [
+    {
+      "x": 237.17105102539062,
+      "y": 338.36842346191406,
+      "type": "1"
+    },
+    {
+      "x": 245.17105102539062,
+      "y": 142.36842346191406,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-26T18:34:36.412626",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13421.53.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.77 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

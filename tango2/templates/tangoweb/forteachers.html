@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="content p-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h5 class="card-title">For Teachers</h5>
+                    </div>
+                    <div class="card-body">
+                        
+                        <div>
+                            <h4 class="text-blue">Open up the world of pathology</h4>
+                            <p>Our new competition is aimed at children from primary age to sixth form. The different levels, from Mild to Super-charger mean that it is accessible to all and presents challenge to older pupils as they move to the higher levels.</p>
+                            <p>Certificates are available to all participants and the top three scorers in each age category win prizes.</p>
+                            <p>The competition demonstrates what pathologists do, and also shows the significant advances being made in the area as pathology becomes more and more digitally based.</p>
+                            <p>Significant projects worldwide are developing algorithms and artificial intelligence applications to help pathologists diagnose more accurately and faster, for the benefit of the patient.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-blue">Get involved</h4>
+                            <p><a href="{% static 'data/Beat_the_Pathologist.pdf' %}">Download the poster</a> and get your pupils involved</p>
+                            <img style="width:100%" src="/static/image/main-landing.jpg" alt="">
+                        </div> 
+
+                    </div>
+                </div><!-- /.card -->
+            </div> <!-- /.col-md-12 -->
+        </div> <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+{% endblock content %}

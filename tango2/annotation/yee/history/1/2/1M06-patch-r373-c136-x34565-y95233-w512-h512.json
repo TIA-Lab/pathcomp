@@ -1,0 +1,33 @@
+{
+  "name": "yee",
+  "dots": [
+    {
+      "x": 237.171875,
+      "y": 214,
+      "type": "1"
+    },
+    {
+      "x": 243.171875,
+      "y": 301,
+      "type": "1"
+    },
+    {
+      "x": 227.171875,
+      "y": 367,
+      "type": "1"
+    },
+    {
+      "x": 136.171875,
+      "y": 222,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-21T20:23:36.449530",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13310.93.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.133 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

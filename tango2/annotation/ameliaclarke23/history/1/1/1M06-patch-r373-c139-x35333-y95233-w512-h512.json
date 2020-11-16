@@ -1,0 +1,53 @@
+{
+  "name": "ameliaclarke23",
+  "dots": [
+    {
+      "x": 157.171875,
+      "y": 301,
+      "type": "1"
+    },
+    {
+      "x": 350.171875,
+      "y": 279,
+      "type": "1"
+    },
+    {
+      "x": 384.171875,
+      "y": 321,
+      "type": "1"
+    },
+    {
+      "x": 201.171875,
+      "y": 124,
+      "type": "1"
+    },
+    {
+      "x": 327.171875,
+      "y": 124,
+      "type": "1"
+    },
+    {
+      "x": 342.171875,
+      "y": 214,
+      "type": "1"
+    },
+    {
+      "x": 188.171875,
+      "y": 279,
+      "type": "1"
+    },
+    {
+      "x": 134.171875,
+      "y": 260,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-06T08:22:52.207968",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Angelina",
+  "dots": [
+    {
+      "x": 168,
+      "y": 284,
+      "type": "1"
+    },
+    {
+      "x": 334,
+      "y": 219,
+      "type": "1"
+    },
+    {
+      "x": 369,
+      "y": 209,
+      "type": "1"
+    },
+    {
+      "x": 337,
+      "y": 239,
+      "type": "1"
+    },
+    {
+      "x": 327,
+      "y": 366,
+      "type": "1"
+    },
+    {
+      "x": 137,
+      "y": 238,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-23T10:38:07.338312",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

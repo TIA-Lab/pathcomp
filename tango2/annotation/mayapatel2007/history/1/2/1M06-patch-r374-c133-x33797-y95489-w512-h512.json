@@ -1,0 +1,48 @@
+{
+  "name": "mayapatel2007",
+  "dots": [
+    {
+      "x": 234.671875,
+      "y": 358,
+      "type": "1"
+    },
+    {
+      "x": 204.671875,
+      "y": 385,
+      "type": "1"
+    },
+    {
+      "x": 397.671875,
+      "y": 382,
+      "type": "1"
+    },
+    {
+      "x": 333.671875,
+      "y": 356,
+      "type": "1"
+    },
+    {
+      "x": 363.671875,
+      "y": 277,
+      "type": "1"
+    },
+    {
+      "x": 285.671875,
+      "y": 197,
+      "type": "1"
+    },
+    {
+      "x": 279.671875,
+      "y": 257,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-29T14:44:24.328010",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

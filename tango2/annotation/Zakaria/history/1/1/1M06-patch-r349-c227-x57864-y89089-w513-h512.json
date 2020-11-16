@@ -1,0 +1,38 @@
+{
+  "name": "Zakaria",
+  "dots": [
+    {
+      "x": 275.171875,
+      "y": 173,
+      "type": "1"
+    },
+    {
+      "x": 367.171875,
+      "y": 332,
+      "type": "1"
+    },
+    {
+      "x": 373.171875,
+      "y": 252,
+      "type": "1"
+    },
+    {
+      "x": 340.171875,
+      "y": 222,
+      "type": "1"
+    },
+    {
+      "x": 368.171875,
+      "y": 176,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-30T16:14:53.168622",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Kierat.KC",
+  "dots": [
+    {
+      "x": 224.171875,
+      "y": 356,
+      "type": "1"
+    },
+    {
+      "x": 329.171875,
+      "y": 384,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-23T15:44:42.159827",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (iPad; CPU OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "parkj1011",
+  "dots": [
+    {
+      "x": 299.25,
+      "y": 219,
+      "type": "1"
+    },
+    {
+      "x": 375.25,
+      "y": 181,
+      "type": "1"
+    },
+    {
+      "x": 262.25,
+      "y": 361,
+      "type": "1"
+    },
+    {
+      "x": 350.25,
+      "y": 360,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-07T12:10:36.668808",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

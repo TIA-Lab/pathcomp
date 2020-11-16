@@ -1,0 +1,23 @@
+{
+  "name": "charlotte2020",
+  "dots": [
+    {
+      "x": 171.84375,
+      "y": 269.25,
+      "type": "2"
+    },
+    {
+      "x": 140.84375,
+      "y": 359.25,
+      "type": "2"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-04T07:56:43.713722",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

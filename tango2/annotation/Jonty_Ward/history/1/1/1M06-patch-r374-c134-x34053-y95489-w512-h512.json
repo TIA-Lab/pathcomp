@@ -1,0 +1,38 @@
+{
+  "name": "Jonty_Ward",
+  "dots": [
+    {
+      "x": 318.171875,
+      "y": 185,
+      "type": "1"
+    },
+    {
+      "x": 226.171875,
+      "y": 344,
+      "type": "1"
+    },
+    {
+      "x": 322.171875,
+      "y": 381,
+      "type": "1"
+    },
+    {
+      "x": 364.171875,
+      "y": 360,
+      "type": "1"
+    },
+    {
+      "x": 138.171875,
+      "y": 372,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-03T09:23:35.519731",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

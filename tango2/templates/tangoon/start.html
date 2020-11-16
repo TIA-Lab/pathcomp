@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% load tango_filters %}
+{% load static %}
+
+{% block content %}
+<div class="content">
+    <div class="container p-2">
+        <div class="row">
+            <div class="offset-md-2 col-md-8">
+
+                <div class="card card-primary card-outline">
+                    <!-- <div class="card-header">
+                        <h3 class="card-title">
+                          <i class="fas fa-info"></i> Information
+                        </h3>
+                    </div> -->
+                    <div class="card-body login-card-body">
+                        <div class="callout callout-info">
+                            <h5><i class="fas fa-info"></i> Competition Information:</h5>
+                            <ul>
+                                <li>This is ( <b>{{ attempt }}</b> ) attempt to enter the competition in <strong class="{% getLevelClassColor level %}">{% getLevelString level %} </strong> level.</li>
+{%  if done == 0 %}                   
+                                <li>There are ( <b>{{ total }}</b> ) questions to complete this level competition.</li>              
+{%  else %}
+                                <li>You have done ( <b>{{ done }}</b> ) questions and ( <b>{{ remaining }}</b> ) questions remaining to complete this attempt.</li>
+{%  endif %}                       
+                            </ul>
+                        </div> 
+                        <!-- <h3><strong class="{% getLevelClassColor level %}">{% getLevelString level %} </strong> Level Introduction</h3>  -->
+                        <h3>Introduction</h3>
+                        <iframe class="my-2" width="100%" height="400" src="https://www.youtube.com/embed/9bZXXIfNT2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>                 
+                        <!-- <iframe width="100%" height="450" src="https://www.youtube.com/embed/9bZXXIfNT2I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <h5>Please click <b>YES</b> if you like to enter this competition.</h5>
+                    </div> 
+                    <div class="card-footer">
+{%  if remaining != 0 %}   
+                        <a href="{% url 'tangoon-competition' level=level attempt=attempt %}" class="btn btn-primary"><i class="fas fa-plus-circle"></i> YES</a>
+{%  endif %}
+                        <a href="{% url 'tangoon-home' %}" class="btn btn-primary float-right"><i class="fas fa-minus-circle"></i> NO</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

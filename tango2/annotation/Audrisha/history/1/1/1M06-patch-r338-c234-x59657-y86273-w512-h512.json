@@ -1,0 +1,48 @@
+{
+  "name": "Audrisha",
+  "dots": [
+    {
+      "x": 137.671875,
+      "y": 242,
+      "type": "1"
+    },
+    {
+      "x": 170.671875,
+      "y": 291,
+      "type": "1"
+    },
+    {
+      "x": 327.671875,
+      "y": 373,
+      "type": "1"
+    },
+    {
+      "x": 337.671875,
+      "y": 216,
+      "type": "1"
+    },
+    {
+      "x": 370.671875,
+      "y": 208,
+      "type": "1"
+    },
+    {
+      "x": 334.671875,
+      "y": 240,
+      "type": "1"
+    },
+    {
+      "x": 380.671875,
+      "y": 332,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-02T12:52:13.075001",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

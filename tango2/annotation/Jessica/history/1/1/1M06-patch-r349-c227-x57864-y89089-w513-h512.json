@@ -1,0 +1,48 @@
+{
+  "name": "Jessica",
+  "dots": [
+    {
+      "x": 272.671875,
+      "y": 182,
+      "type": "1"
+    },
+    {
+      "x": 364.671875,
+      "y": 343,
+      "type": "1"
+    },
+    {
+      "x": 364.671875,
+      "y": 255,
+      "type": "1"
+    },
+    {
+      "x": 335.671875,
+      "y": 224,
+      "type": "1"
+    },
+    {
+      "x": 348.671875,
+      "y": 147,
+      "type": "1"
+    },
+    {
+      "x": 374.671875,
+      "y": 170,
+      "type": "1"
+    },
+    {
+      "x": 353.671875,
+      "y": 279,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-08T16:45:05.588542",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "6ahgarnham",
+  "dots": [
+    {
+      "x": 243.171875,
+      "y": 335,
+      "type": "1"
+    },
+    {
+      "x": 248.171875,
+      "y": 142,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-24T08:41:33.608310",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13099.110.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.136 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "teniel.10",
+  "dots": [
+    {
+      "x": 238.57498168945312,
+      "y": 331.1999969482422,
+      "type": "1"
+    },
+    {
+      "x": 243.57498168945312,
+      "y": 142.1999969482422,
+      "type": "1"
+    },
+    {
+      "x": 205.57498168945312,
+      "y": 127.19999694824219,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-30T10:51:18.179864",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

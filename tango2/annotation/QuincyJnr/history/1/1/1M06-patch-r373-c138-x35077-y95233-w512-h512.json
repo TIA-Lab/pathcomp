@@ -1,0 +1,28 @@
+{
+  "name": "QuincyJnr",
+  "dots": [
+    {
+      "x": 330.171875,
+      "y": 219,
+      "type": "1"
+    },
+    {
+      "x": 347.171875,
+      "y": 185,
+      "type": "1"
+    },
+    {
+      "x": 370.171875,
+      "y": 189,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-08T13:14:19.008674",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

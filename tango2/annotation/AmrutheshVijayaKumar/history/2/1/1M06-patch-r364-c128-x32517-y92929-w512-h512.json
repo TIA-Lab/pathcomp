@@ -1,0 +1,43 @@
+{
+  "name": "AmrutheshVijayaKumar",
+  "dots": [
+    {
+      "x": 253.171875,
+      "y": 305,
+      "type": "1"
+    },
+    {
+      "x": 299.171875,
+      "y": 289,
+      "type": "1"
+    },
+    {
+      "x": 251.171875,
+      "y": 182,
+      "type": "1"
+    },
+    {
+      "x": 310.171875,
+      "y": 164,
+      "type": "1"
+    },
+    {
+      "x": 131.171875,
+      "y": 147,
+      "type": "1"
+    },
+    {
+      "x": 334.171875,
+      "y": 313,
+      "type": "2"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-11T19:02:16.173999",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

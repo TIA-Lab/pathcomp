@@ -1,0 +1,28 @@
+{
+  "name": "Blaise2408",
+  "dots": [
+    {
+      "x": 136.501953125,
+      "y": 331.67578125,
+      "type": "1"
+    },
+    {
+      "x": 318.501953125,
+      "y": 344.67578125,
+      "type": "1"
+    },
+    {
+      "x": 238.501953125,
+      "y": 261.67578125,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-21T16:49:53.048378",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (X11; CrOS x86_64 13421.53.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.77 Safari/537.36",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Annacogdell",
+  "dots": [
+    {
+      "x": 192.171875,
+      "y": 136,
+      "type": "1"
+    },
+    {
+      "x": 357.171875,
+      "y": 233,
+      "type": "1"
+    },
+    {
+      "x": 246.171875,
+      "y": 266,
+      "type": "1"
+    },
+    {
+      "x": 290.171875,
+      "y": 293,
+      "type": "1"
+    },
+    {
+      "x": 324.171875,
+      "y": 354,
+      "type": "1"
+    },
+    {
+      "x": 150.171875,
+      "y": 342,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-11-03T09:32:12.914903",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

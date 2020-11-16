@@ -1,0 +1,33 @@
+{
+  "name": "Erinlilpop",
+  "dots": [
+    {
+      "x": 343.171875,
+      "y": 319,
+      "type": "1"
+    },
+    {
+      "x": 377.171875,
+      "y": 354,
+      "type": "1"
+    },
+    {
+      "x": 170.171875,
+      "y": 147,
+      "type": "1"
+    },
+    {
+      "x": 220.171875,
+      "y": 126,
+      "type": "1"
+    }
+  ],
+  "ip": "20.0.0.6",
+  "serverUTCDate": "2020-10-23T17:45:08.859512",
+  "clientDate": "",
+  "userAgent": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15",
+    "version": null,
+    "language": "C.UTF-8"
+  }
+}

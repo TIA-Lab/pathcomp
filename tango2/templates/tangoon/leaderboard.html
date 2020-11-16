@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% load tango_filters %}
+{% load static %}
+
+{% block content %}
+<!-- DataTables -->
+<link rel="stylesheet" href="{% static 'theme/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css' %}">
+<link rel="stylesheet" href="{% static 'theme/plugins/datatables-responsive/css/responsive.bootstrap4.min.css' %}">
+
+<script src="{% static 'theme/plugins/datatables/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'theme/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js' %}"></script>
+<script src="{% static 'theme/plugins/datatables-responsive/js/dataTables.responsive.min.js' %}"></script>
+<script src="{% static 'theme/plugins/datatables-responsive/js/responsive.bootstrap4.min.js' %}"></script>
+<script>
+// $(function () {
+//     $("#annotationTable").DataTable({
+//         "responsive": true,
+//         "autoWidth": false,
+//         "paging": false,
+//         "searching": true,
+//         "order": [[0, 'desc']]
+//     });
+// });
+</script>
+
+<div class="content">
+    <div class="container p-2">
+
+        <div class="row">
+            <div class="col-12">
+
+                <div class="card card-primary card-outline">
+                    <div class="card-header">
+                        <h5 class="card-title">Competition Leaderboard - <span class="text-bold {% getLevelClassColor level %}">{% getLevelString level %}</span></h5>
+                    </div>
+                    <div class="card-body">
+                        <table id="annotationTable" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="width:10%;">NO</th>
+                                <th style="width:50%;">Name</th>
+                                <th style="width:20%;">Score</th>
+                                <th style="width:20%;">Created</th>
+                            </tr>
+                        </thead>
+                        <tboday>
+{%  for aUserBoard in boards %}
+                            <tr>
+                                <td>{{ forloop.counter }}</td>
+                                <td>{{ aUserBoard.user.username }}</td>
+                                <td>{% getScore aUserBoard.correctcount aUserBoard.questioncount %}</td>
+                                <td>{{ aUserBoard.created|date:"Y-m-d H:i:s" }}</td>
+                            </tr>
+{%  endfor %} 
+                        </tboday>
+                        </table> 
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+    </div>
+</div>
+{% endblock content %}
