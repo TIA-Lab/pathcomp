@@ -64,6 +64,7 @@ def getCompetitionLevel(request):
 
 @login_required
 def home(request):
+    # return redirect('tangoweb-home')
     # this is tempoary but if there are many levels, change the code below
     aUserBoards = UserCompetitionBoard.objects.filter(user=request.user).order_by('correctcount')
     level2 = level3 = level4 = 0
