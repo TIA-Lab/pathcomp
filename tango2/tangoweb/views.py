@@ -7,9 +7,11 @@ from django.template.loader import get_template, render_to_string
 from django.contrib import messages
 from django.contrib.auth.models import User
 from .forms import UserRegisterForm, UserProfileForm
+from .models import UserCertificate
 from xhtml2pdf import pisa 
 import os
 from tango2.settings import BASE_DIR
+from fpdf import FPDF, HTMLMixin
 
 # Create your views here.
 def home(request):
@@ -100,86 +102,63 @@ def certificateinformation(request):
     return render(request, 'tangoweb/certificateinformation.html', context)    
 
 
-
 def contactus(request):
     context = {
         'top': 'contactus',
     }
     return render(request, 'tangoweb/contactus.html', context)    
 
+
+@login_required
 def certificate(request):
+
+    if request.method == 'POST':
+        name = request.POST.get('username')
+
+        # Create a certificate and save it to Database.
+        aCertificate  = UserCertificate()
+        aCertificate.name = name
+        aCertificate.user = request.user
+        aCertificate.downloadcount = 0
+        aCertificate.save()
+
+    certificates = UserCertificate.objects.filter(user=request.user)
     context = {
         'top': 'certificate',
+        'certificates': certificates
     }
     return render(request, 'tangoweb/certificate.html', context)  
 
-# def certificateprinting(request):
-#     data = {
-#         'name': 'Young Saeng Park'
-#     }
-
-#     template = get_template('tangoweb/certificateformat.html')
-#     html  = template.render(data)
-
-#     file = open('test.pdf', "w+b")
-#     pisaStatus = pisa.CreatePDF(html.encode('utf-8'), dest=file, encoding='utf-8')
-
-#     file.seek(0)
-#     pdf = file.read()
-#     file.close()            
-#     return HttpResponse(pdf, 'application/pdf') 
-
-# def certificateprinting(request):
-#     from fpdf import FPDF
-#     pdf = FPDF(format='letter')
-#     pdf.add_page()
-#     pdf.set_font("Arial", size=12)
-#     pdf.cell(200, 10, txt="Welcome to Python!", align="C")
-#     pdf.output("Somefilename.pdf", 'I')
-    
-#     response = HttpResponse(pdf, content_type='application/pdf')
-#     response['Content-Disposition'] = "attachment; filename=Somefilename.pdf"
-
-#     return response
-
-from fpdf import FPDF, HTMLMixin
 
 class HtmlPdf(FPDF, HTMLMixin):
     pass
 
-def certificateprinting(request):    
+def certificateprinting(request, id=None):    
+    aCertificate = UserCertificate.objects.get(pk=id)
+    if aCertificate == None:
+        return HttpResponse('<h2>Sorry that there is a problem in certification generation. Please contact an administrator</h2>')
+
+    aCertificate.downloadcount += 1
+    aCertificate.save()
+
     pdf = HtmlPdf()
-    # pdf = FPDF(orientation = 'L', unit = 'mm', format='A4')
     pdf.add_page(orientation='L')
     pdf.image(os.path.join(BASE_DIR, 'static/image/certificate.png'), 0, 0, 297, 210)
 
-    name = ''
-    print(request.method)
-    if request.method == 'POST':
-        name = request.POST.get('username')
-        print(request.POST)
-        print(name)
-
-    # pdf.add_font('Hello Valentina', '', os.path.join(BASE_DIR, 'static/font/Hello Valentina.ttf'), uni=True)
-    # pdf.set_font('Hello Valentina', '', 40)
-    
+    print(os.path.join(BASE_DIR, 'static/font/Apple Chancery 100.ttf'))
     pdf.add_font('Apple Chancery 100', '', os.path.join(BASE_DIR, 'static/font/Apple Chancery 100.ttf'), uni=True)
     pdf.set_font('Apple Chancery 100', '', 35)
     
     pdf.ln(h=60)
-    pdf.cell(0, 0, name, 0, 1, 'C')   
-    # data = {
-    #     'name': name
-    # }
-    # template = get_template('tangoweb/certificateformat.html')
-    # html  = template.render(data)
-    # pdf.write_html(html)
-    
+    pdf.cell(0, 0, aCertificate.name, 0, 1, 'C')   
 
+    
     response = HttpResponse(pdf.output(dest='S').encode('latin-1'))
+    response['Content-Disposition'] = f'attachment; filename="{request.user.username}_pathcomp_certificate.pdf"'
     response['Content-Type'] = 'application/pdf'
 
     return response
+
 
 @login_required
 def user_logout(request):

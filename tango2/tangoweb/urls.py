@@ -11,6 +11,6 @@ urlpatterns = [
     path('forteachers/', views.forteachers, name='tangoweb-forteachers'),
     path('contactus/', views.contactus, name='tangoweb-contactus'),
     path('certificate/', views.certificate, name='tangoweb-certificate'),
-    path('certificateprinting/', views.certificateprinting, name='tangoweb-certificateprinting'),
+    path('certificateprinting/<int:id>', views.certificateprinting, name='tangoweb-certificateprinting'),
     path('certificateinformation/', views.certificateinformation, name='tangoweb-certificateinformation'),
 ]

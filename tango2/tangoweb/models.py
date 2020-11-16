@@ -54,3 +54,9 @@ class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     school_stage = models.CharField(max_length=50, null=True)
 
+
+class UserCertificate(models.Model):
+    name = models.CharField(max_length=100)
+    downloadcount = models.IntegerField(default=0, null=True)
+    created = models.DateTimeField(default=timezone.now)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)

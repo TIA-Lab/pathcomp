@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <form action="{% url 'tangoweb-certificateprinting' %}" method="post">
+                <form action="{% url 'tangoweb-certificate' %}" method="post">
                     {% csrf_token %}
                     <div class="card card-primary">
                         <div class="card-header">
@@ -21,12 +21,43 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary"><i class="fas fa-plus-circle"></i> PRINT </button>
+                            <button type="submit" class="btn btn-primary"><i class="fas fa-plus-circle"></i> GENERATE </button>
                         </div>
                     </div><!-- /.card -->
                 </form>
             </div> <!-- /.col-md-12 -->
         </div> <!-- /.row -->
+
+        <div class="row">
+            <div class="col-12">
+
+                <div class="card card-primary card-outline">
+                    <div class="card-header">
+                        <h5 class="card-title">Generated Certificate</h5>
+                    </div>
+                    <div class="card-body">
+                        <table id="annotationTable" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="width:60%;">Name on Certificate</th>
+                                <th style="width:20%;">Created</th>
+                            </tr>
+                        </thead>
+                        <tboday>
+{%  for aCertificate in certificates %}
+                            <tr>
+                                <td><a href="{% url 'tangoweb-certificateprinting' aCertificate.id %}">{{ aCertificate.name}}</a></td>
+                                <td>{{ aCertificate.created|date:"Y-m-d H:i:s" }}</td>
+                            </tr>
+{%  endfor %} 
+                        </tboday>
+                        </table> 
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
     </div><!-- /.container-fluid -->
 </div>
 {% endblock content %}

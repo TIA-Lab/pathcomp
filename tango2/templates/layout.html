@@ -99,9 +99,9 @@
                 <!-- Right navbar links -->
                 <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
 {%  if user.is_authenticated %}
-                <!-- <li class="nav-item {% checkTopMenuActive 'certificate' top %}">
+                <li class="nav-item {% checkTopMenuActive 'certificate' top %}">
                     <a href="{% url 'tangoweb-certificate' %}" class="nav-link">Certificate</a>
-                </li> -->
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'tangoweb-logout' %}">
                         <i class="fas fa-sign-in-alt"></i> Logout

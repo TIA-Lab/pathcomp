@@ -7,6 +7,7 @@ from tangoweb.functions import examDotsInput
 from tangoweb.models import UserCompetition, UserCompetitionBoard
 from django.utils import timezone
 from django.db.models import Sum
+from django.db.models import F
 
 from PIL import Image
 from pathlib import Path
@@ -298,7 +299,8 @@ def end(request, level=1, attempt=0):
 
 @login_required
 def leaderboardCompetition(request, level):
-    aUserBoards = UserCompetitionBoard.objects.filter(level=level).order_by('-correctcount')
+    # aUserBoards = UserCompetitionBoard.objects.filter(level=level).order_by('-correctcount')
+    aUserBoards = UserCompetitionBoard.objects.filter(level=level).annotate(score=F('correctcount') / F('questioncount')).order_by('-score')
     context = {
         'top': 'leaderboard',
         'boards': aUserBoards,
