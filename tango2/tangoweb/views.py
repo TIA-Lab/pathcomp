@@ -149,7 +149,7 @@ def certificateprinting(request, id=None):
     pdf.add_font('Apple Chancery 100', '', os.path.join(BASE_DIR, 'static/font/Apple Chancery 100.ttf'), uni=True)
     pdf.set_font('Apple Chancery 100', '', 35)
     
-    pdf.ln(h=60)
+    pdf.ln(h=50)
     pdf.cell(0, 0, aCertificate.name, 0, 1, 'C')   
 
     
