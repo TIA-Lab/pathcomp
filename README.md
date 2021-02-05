@@ -22,7 +22,7 @@ The structure of each level folder is the same as the Competition.
 
 # Setup Guide
 ## Database Setup
-Copy .env.example to .env
+Copy example.env to .env
 Set the datasetbse values
 - DB_ROOT_PASSWORD=
 - DB_NAME=
