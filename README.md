@@ -1,5 +1,5 @@
 # PathComp
-PathComp is a web-based competition for school age participants. Participants are asked to "Beat the Pathologists" by annotating a series of WSI. The competition is compsed of four levels: Mild, Hot, Spicy and Superchater. Participants begins from Mild level and correctly annotates at least half of the cells so that they can continue to the next level. 
+PathComp is a web-based competition for school age participants. Participants are asked to "Beat the Pathologists" by annotating a series of WSI. The competition includes four levels: Mild, Hot, Spicy and Supercharger of different difficulty. Each participant starts from the Mild level and has to correctly annotate at least half of the cells included in the image to proceed to the next level.
 
 # Getting Started
 First, install
