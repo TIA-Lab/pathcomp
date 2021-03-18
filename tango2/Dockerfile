@@ -1,19 +1,18 @@
-# Use the Python3.7.2 image
-FROM python:3.7.2-stretch
+# pull official base image
+FROM python:3.7
 
-# Set the working directory to /app
+# set work directory
 WORKDIR /app
+RUN mkdir /app/media
 
-# Set environment variables
+# set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-# Copy the current directory contents into the container at /app 
-#ADD . /app
-COPY requirements.txt /app
-
-# Install the dependencies
+# install dependencies
+RUN pip install --upgrade pip
+COPY ./requirements.txt .
 RUN pip install -r requirements.txt
 
-# run the command to start uWSGI
-CMD ["python", "manage.py", "runserver", "0.0.0.0:5000"]
+# copy project
+COPY . .

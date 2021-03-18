@@ -1,7 +1,13 @@
+.venv/
+__pycache__/
+.vscode/
 .DS_Store
-.env
+
+.env.dev
+.env.prod
+.env.prod.db
 mysql/
-docker-compose.yml
+media/
 
 # Log files
 npm-debug.log*

@@ -1,55 +1,68 @@
 # PathComp
-PathComp is a web-based competition for school ages participaants. This competition is forcused on asking the competition participants to attem to "Beat the Pathologists" by annotating a seriese of WSI. The competition is compsed of four levels: Mild, Hot, Spicy and Superchater. Participants begins from Mild level and correctly annotates at least half of the cells so that they can continue to the next level. 
+PathComp is a web-based competition for school age participants. Participants are asked to "Beat the Pathologists" by annotating a series of WSI. The competition is compsed of four levels: Mild, Hot, Spicy and Superchater. Participants begins from Mild level and correctly annotates at least half of the cells so that they can continue to the next level. 
 
 # Getting Started
 First, install
 - Docker [here](https://www.docker.com/get-started).
 - Docker-Compose [here](https://docs.docker.com/compose/install/)
 
+note: If you've already installed Docker Desktop/Toolbox for either Windows or Mac, you already have Docker Compose.
+
 # Annotation Data Setup
-There are two patch image folders for competition and practice. 
+Under the static directory there is the patch directory which includes two sub-folders. One for the competition and another one for practicing. 
 ## Competition: 
-It has 1, 2, 3 and 4 sub-folder which maps to Mild, Hot, Spicy and Superchager level respectively. 
+The competition folder includes 4 numbered sub-folders. Each number corresponds to one of the four levels available. 
 
-Each level folder must have **image** and **json** sub-folder. Any fatch image used for the competition has to be saved in **image** folder' and the ground true for each patch image has to be savved in **json** folder. 
+i.e 1 = Mild, 2 = Hot, 3 = Spicy and 4 = Supercharger 
 
-It is important that each fatch image and ground true have to the same name. e.g.) patch1.png -> patch1.json
-
+Each level folder has to include two sub-folders called **image** and **json**. 
+The image to be annotated must be stored in the image folder while the correct answer must be stored in the json folder. Please note that both files need to have the same name.
+    
 ## Practice
-At the moment, It has 1 and 2 which maps to Mild and Hot respectively. 
+The practice folder includes only 2 sub-folders for the Mild and Hot levels. However, you can populate it with the remaining two. It follows the same structure as the competition folder.
 
-The structure of each level folder is the same as the Competition. 
+# Annotation data for Participants
+Each participant will have their own folder under the directory called annotation.
 
-# Setup Guide
-## Database Setup
-Copy example.env to .env
-Set the datasetbse values
-- DB_ROOT_PASSWORD=
-- DB_NAME=
-- DB_USERNAME=
-- DB_PASSWORD=
-- DB_PORT=
+Each participant's folder will contain two sub-folders: **competition** and **history**.
+- competition: Used to store the data related to the participant's ongoing work
+- history: Used to keep the data submitted by the participant
 
-Any database data is saved to **/mysql/data** folder. 
+Setup
+---
+1. Rename the .env.example file to .env.dev
 
-## Development Setup
-Copy docker-compose.yml.example to docker-compose.yml
-
-To run the PathComp
-```docker-compose
-docker-compose up -d
+2. Run the below command to generate your own secret key
+```bash
+python -c "import secrets; print(secrets.token_urlsafe())"
 ```
 
-To stop the PathComp
-```docker-compose
+3. Copy the generated secret key and paste it in .env.dev
+
+Development
+---
+1. Build and deploy the docker container by running
+
+```bash
+docker-compose up --build -d
+```
+
+2. If it's your first time running the container, run this command to populate the database
+```bash
+docker-compose exec pathcomp python manage.py migrate --noinput
+```
+
+3. The application can be accessed at
+```bash
+   localhost:8000
+   ```
+4. Stop the application by running
+
+```bash
 docker-compose down
 ```
 
-# Annotation data for paticipants
-There is **annotation** folder existed.
-Each participant will have own folder in **annotation** folder based on an account.
-
-Each participant folder havs two sub-folders: **competition** and **history**. 
-- competition: keep data related to the current working on
-- history: keep data done previously
-
+5. Restart the application by running
+```bash
+docker-compose up -d
+```

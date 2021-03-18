@@ -20,20 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '#+nck^ngtm0m$go+wae*wif=n+dmtoy*z83kdb30@+(ozw(gjx'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = int(os.environ.get('DEBUG', default=0))
 
-ALLOWED_HOSTS = [
-    'pathlake.dcs.warwick.ac.uk',
-    'tia-web-01.dcs.warwick.ac.uk',
-    'localhost',
-    '20.0.0.6',
-    '20.0.0.11',
-    '127.0.0.1'
-]
-
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
 
 # Application definition
 
@@ -80,28 +72,19 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'tango2.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': os.environ["MYSQL_ENGINE"],
-        'HOST': os.environ["MYSQL_HOST"],
-        'NAME': os.environ["MYSQL_DATABASE"],
-        'USER': os.environ["MYSQL_USER"],
-        'PASSWORD': os.environ["MYSQL_PASSWORD"],
-        'PORT': os.environ["MYSQL_PORT"],
+        'ENGINE': os.environ.get('DATABASE_ENGINE', "django.db.backends.sqlite3"),
+        'NAME': os.environ.get('DATABASE_NAME', os.path.join(BASE_DIR, "db.sqlite3")),
+        'USER': os.environ.get('DATABASE_USER', "user"),
+        'PASSWORD': os.environ.get('DATABASE_PASSWORD', "password"),
+        'PORT': os.environ.get('DATABASE_PORT', "5432"),
+        'HOST': os.environ.get('DATABASE_HOST', "localhost"),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -138,13 +121,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-#FORCE_SCRIPT_NAME = '/tango2'
-#STATIC_URL = '/tango2/static/'
-STATIC_URL = '/static/'
+STATIC_URL = '/staticfiles/'
+
+if not DEBUG:
+    STATIC_ROOT =  os.path.join(BASE_DIR, "staticfiles")
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 

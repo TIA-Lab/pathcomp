@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  pathcomp_db:
+    image: postgres:12.0-alpine
+    container_name: pathcomp_db
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_DB=pathcomp_dev
+      - POSTGRES_USER=pathcomp
+      - POSTGRES_PASSWORD=pathcomp
+    expose:
+      - "5432"
+
+  pathcomp:
+    build: ./tango2
+    container_name: pathcomp
+    restart: always
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./tango2:/app
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env.dev
+    depends_on:
+      - pathcomp_db
+
+volumes:
+  postgres_data:
+
+
+
